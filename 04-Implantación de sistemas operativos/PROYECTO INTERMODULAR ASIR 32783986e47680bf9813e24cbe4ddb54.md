@@ -1,0 +1,227 @@
+# PROYECTO INTERMODULAR ASIR
+
+# IMPLANTACIÓN DE SISTEMAS OPERATIVOS
+
+Equipo: Sergio Gallardo Marchal,  Miriam Ocaña Pérez-Cerdá, Antonio José Rossi Bersabé.
+
+# 1. ANÁLISIS DE NECESIDADES DEL SISTEMA
+
+Nuestro centro de formación en ciberseguridad cuenta con **varios departamentos segmentados mediante VLANs bien diferenciadas** (administración, desarrollo, formación, servidores, LAB, etc.), cada una con necesidades específicas de seguridad, rendimiento y funcionalidad, así que los sistemas operativos se han implantado en función de estas necesidades.
+
+---
+
+## 1.1 SERVIDORES
+
+Contamos con tres servidores:
+
+1. Un servidor principal CPD.
+2. Un servidor para alojar la web de nuestro centro.
+3. Un servidor para alojar las máquinas vulnerables.
+
+### Servidor CPD (principal) (VLAN 60) (192.168.60.0/24)
+
+![/IMG/image.png](IMG/image.png)
+
+**Se ha optado por la implantación de un Ubuntu Server para el servidor principal:**
+
+- Al tratarse de un servidor clave y siempre operativo, se requiere un sistema lo más estable y confiable posible.
+- Es compatible con servicios de red como:
+    - DNS
+    - DHCP
+    - Autenticación centralizada (LDAP), muy útil para la gestión de múltiples usuarios.
+- Ubuntu Server ofrece configuraciones avanzadas de seguridad, incluyendo control de múltiples usuarios (*entre estos, empleados y estudiantes*) y actualizaciones frecuentes.
+- Es un sistema que carece de interfaz gráfica, lo cual optimiza el rendimiento del hardware.
+- Se trata de un sistema robusto y preparado para múltiples conexiones.
+- Se trata de Software libre y gratuito. Al no requerir de licencias, se reducen significativamente los costes de implantación.
+
+### Para el servidor web de nuestro centro (VLAN 60)
+
+![image.png](IMG/image.png)
+
+**Se ha optado por la implantación de un Ubuntu Server:**
+
+- Es altamente compatible con servidores web como Apache HTTP Server o Nginx.
+- Nos permite una administración remota bastante sencilla, la cual se gestiona mediante SSH.
+- Se trata de un servicio expuesto, potencialmente accesible desde otras redes, de modo que la seguridad que nos ofrece Ubuntu Server es una justificación clave:
+    - Actualizaciones frecuentes
+    - Configuración de firewall (UFW)
+    - Control de accesos
+- Una vez más, su ligereza y eficiencia nos permite servir contenido web con un consumo mínimo de recursos.
+
+### Para el servidor LAB (máquinas vulnerables) (VLAN 61) (192.168.61.0/24)
+
+![image.png](IMG/image%201.png)
+
+Tiene una función muy concreta → **virtualizar máquinas vulnerables de forma aislada y segura.** Por lo tanto, el sistema elegido deberá cumplir con las siguientes funciones:
+
+- Virtualización eficiente
+- Buen aislamiento
+- Facilidad de gestión
+
+**Se ha optado por la implantación de Proxmox VE:**
+
+- Proxmox VE nos va a permitir crear múltiples máquinas virtuales vulnerables desde una plataforma única, centralizada y separada.
+- Esto es coherente con la **VLAN** en la que se aloja el servidor, ya que debe estar aislada del resto de la red.
+- Tiene una interfaz web bastante intuitiva desde la cual podemos controlar todas las máquinas virtuales.
+- Cumple con las políticas de seguridad que se van a definir para este apartado del proyecto:
+    - Solo accesible desde VLAN 30, 40 y 50.
+    - Sin acceso directo desde otras VLANs.
+    - Diseñado para evitar que una máquina vulnerable comprometa la red.
+
+---
+
+## 1.2 EQUIPOS DE USUARIO
+
+Contamos con las siguientes secciones:
+
+- Equipos de Administración (VLAN 10)
+- Equipos de Dirección (VLAN 20)
+- Equipos de Desarrollo (VLAN 30)
+- Equipos de Soporte Técnico (VLAN 40)
+- Equipos de Formación (Aula CTF) (VLAN 50)
+- Equipos en red WiFi (VLAN 70 y 80)
+
+### Equipos de Administración (VLAN 10)
+
+![image.png](IMG/image%202.png)
+
+**Se ha optado por la implantación de Windows 11:**
+
+- Interfaz intuitiva, familiar y accesible para usuarios no técnicos.
+- Es compatible con el software empresarial típico, como Microsoft Office.
+- Windows cuenta con un soporte técnico muy amplio.
+
+### Equipos de Dirección (VLAN 20)
+
+![image.png](IMG/image%202.png)
+
+**Se ha optado por la implantación de Windows 11:**
+
+- Nuevamente, entorno familiar e intuitivo.
+- Es compatible con múltiples herramientas de gestión y comunicación como Microsoft Office, Microsoft Teams, Slack, etc.
+
+### Equipos de Desarrollo (VLAN 30)
+
+![image.png](IMG/image%203.png)
+
+**Se ha optado por la implantación de Ubuntu Desktop:**
+
+- Compatible con múltiples herramientas de desarrollo, como Visual Studio Code.
+- Es un sistema flexible y altamente personalizable.
+- Se integra bien con servidores Linux.
+- Permite un mayor control directo sobre el SO.
+- Es más seguro frente a amenazas y malware que otros sistemas.
+
+### Equipos de Soporte Técnico (VLAN 40)
+
+![image.png](IMG/image%203.png)
+
+**Se ha optado por la implantación de Ubuntu Desktop:**
+
+- Nos permite la instalación de múltiples herramientas de de diagnóstico y administración.
+- Nos permite acceder a sistemas de red y servidores.
+- El uso de la terminal es fundamental para tareas de mantenimiento, así como de scripts para su eficiencia.
+- También ofrece más seguridad y control, claves en el rol del soporte técnico.
+
+### Equipos de Formación (Aula CTF) (VLAN 50)
+
+![image.png](IMG/image%203.png)
+
+**También se ha optado por la implantación de Ubuntu Desktop, unificándolo con el departamento de desarrollo:**
+
+- Ambos departamentos trabajan en actividades relacionadas con la ciberseguridad:
+    - Desarrollo de retos
+    - Ejecución de prácticas CTF
+    - Pruebas sobre máquinas vulnerables (VLAN 61)
+- También permite la instalación de herramientas de ciberseguridad (nmap, wireshark, metasploit…)
+- Ambos departamentos tienen acceso al servidor LAB, por lo que necesitan:
+    - Herramientas similares
+    - Entornos compatibles
+
+Todo esto justifica la elección de un **Ubuntu Desktop** frente al famoso **Kali Linux**. Aparte, siempre tendremos la opción de usar Kali Linux como máquina virtual dentro del LAB para retos específicos.
+
+### Equipos en red WiFi (VLAN 70 y 80)
+
+![image.png](IMG/image%204.png)
+
+Esto dependerá del dispositivo (Windows, Linux, móviles…)
+
+- **WiFi empleados (VLAN 70)**:
+    - Dispositivos corporativos
+    - Acceso a recursos internos limitado
+- **WiFi invitados (VLAN 80)**:
+    - Dispositivos externos
+    - Solo acceso a Internet
+
+La VLAN 80 está **aislada del resto de la red**, por lo tanto, no es necesario un sistema operativo específico, ya que el control se realiza a nivel de red.
+
+---
+
+# 2. PLAN DE IMPLANTACIÓN
+
+La implantación de los sistemas operativos en la infraestructura se realizará combinando distintos métodos, en función del tipo de equipo y su función dentro de la red.
+
+Se han definido tres enfoques principales:
+
+- Instalación manual (servidores)
+- Instalación mediante imágenes (equipos de usuario)
+- Instalación mediante virtualización (servidor LAB)
+
+---
+
+## 2.1 INSTALACIÓN MANUAL (SERVIDORES)
+
+**Para el servidor CPD (VLAN 60) y el servidor Web (VLAN 60)**. Se realiza una instalación manual en servidores debido a:
+
+- Necesidad de configuración personalizada
+- Asignación de IP fija
+- Instalación de servicios específicos (DNS, DHCP, web)
+
+### Planning:
+
+1. **Preparación del medio de instalación →** descarga de la ISO de Ubuntu Server y creación de un USB booteable.
+2. **Instalación y configuración de red →** arranque del USB, idioma, teclado y asignación de IP estática según VLAN: *ejemplo, 192.168.60.10 (CPD).*
+3. **Particionado del disco** → / root + swap
+4. **Creación del usuario administrador**
+5. **Instalación de servicios básicos** → como el acceso remoto via PUTTy.
+6. Reinicio y comprobación mediante `ping` :
+
+```bash
+ip a
+ping 192.168.60.1
+```
+
+---
+
+## 2.2 INSTALACIÓN MEDIANTE IMÁGENES (EQUIPOS USUARIO)
+
+**Para Administración (VLAN 10), Dirección (VLAN 20), Desarrollo (VLAN 30) y Formación (VLAN 50)**. Dado el número de equipos (especialmente en el aula con 10 PCs), se utiliza una instalación mediante imágenes para:
+
+- Ahorrar tiempo
+- Garantizar configuraciones idénticas
+- Reducir errores
+
+### Planning:
+
+1. **Preparación de equipo base, ya sea Ubuntu Desktop o Windows →** configuración e instalaciones iniciales de usuarios, software y herramientas.
+2. **Creación de imagen del sistema** → para ello se usará la herramienta de Clonezilla.
+3. **Despliegue en el resto de equipos por medio del clonado.**
+4. **Configuración final** → nombre del equipo y configuración de red (DHCP).
+
+---
+
+## 2.3 INSTALACIÓN MEDIANTE VIRTUALIZACIÓN (SERVIDOR LAB)
+
+**Para el servidor LAB.**  El uso de virtualización permite:
+
+- Crear múltiples entornos de práctica
+- Aislar sistemas vulnerables
+- Reutilizar recursos
+
+### Planning:
+
+1. Instalación del hipervisor → en este caso, Promox VE.
+2. Configuración de red → IP fija 192.168.61.10 e integración en VLAN 61 (aislada)
+3. Acceso a la interfaz web → esto se gestiona desde el navegador
+4. Creación de máquinas virtuales → como Kali Linux, Metasploitable y otras máquinas CTF.
+5. Configuración de red interna → mediante redes virtuales aisladas
