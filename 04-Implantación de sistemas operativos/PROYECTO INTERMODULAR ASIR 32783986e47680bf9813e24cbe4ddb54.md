@@ -20,7 +20,6 @@ Contamos con tres servidores:
 
 ### Servidor CPD (principal) (VLAN 60) (192.168.60.0/24)
 
-![/IMG/image.png](IMG/image.png)
 
 **Se ha optado por la implantación de un Ubuntu Server para el servidor principal:**
 
@@ -36,8 +35,6 @@ Contamos con tres servidores:
 
 ### Para el servidor web de nuestro centro (VLAN 60)
 
-![image.png](IMG/image.png)
-
 **Se ha optado por la implantación de un Ubuntu Server:**
 
 - Es altamente compatible con servidores web como Apache HTTP Server o Nginx.
@@ -50,7 +47,6 @@ Contamos con tres servidores:
 
 ### Para el servidor LAB (máquinas vulnerables) (VLAN 61) (192.168.61.0/24)
 
-![image.png](IMG/image%201.png)
 
 Tiene una función muy concreta → **virtualizar máquinas vulnerables de forma aislada y segura.** Por lo tanto, el sistema elegido deberá cumplir con las siguientes funciones:
 
@@ -83,7 +79,6 @@ Contamos con las siguientes secciones:
 
 ### Equipos de Administración (VLAN 10)
 
-![image.png](IMG/image%202.png)
 
 **Se ha optado por la implantación de Windows 11:**
 
@@ -93,8 +88,6 @@ Contamos con las siguientes secciones:
 
 ### Equipos de Dirección (VLAN 20)
 
-![image.png](IMG/image%202.png)
-
 **Se ha optado por la implantación de Windows 11:**
 
 - Nuevamente, entorno familiar e intuitivo.
@@ -102,7 +95,6 @@ Contamos con las siguientes secciones:
 
 ### Equipos de Desarrollo (VLAN 30)
 
-![image.png](IMG/image%203.png)
 
 **Se ha optado por la implantación de Ubuntu Desktop:**
 
@@ -114,8 +106,6 @@ Contamos con las siguientes secciones:
 
 ### Equipos de Soporte Técnico (VLAN 40)
 
-![image.png](IMG/image%203.png)
-
 **Se ha optado por la implantación de Ubuntu Desktop:**
 
 - Nos permite la instalación de múltiples herramientas de de diagnóstico y administración.
@@ -125,7 +115,6 @@ Contamos con las siguientes secciones:
 
 ### Equipos de Formación (Aula CTF) (VLAN 50)
 
-![image.png](IMG/image%203.png)
 
 **También se ha optado por la implantación de Ubuntu Desktop, unificándolo con el departamento de desarrollo:**
 
@@ -142,7 +131,6 @@ Todo esto justifica la elección de un **Ubuntu Desktop** frente al famoso **Kal
 
 ### Equipos en red WiFi (VLAN 70 y 80)
 
-![image.png](IMG/image%204.png)
 
 Esto dependerá del dispositivo (Windows, Linux, móviles…)
 
