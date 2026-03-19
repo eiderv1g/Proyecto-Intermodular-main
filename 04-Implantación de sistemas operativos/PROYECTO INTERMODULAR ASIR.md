@@ -2,7 +2,7 @@
 
 # IMPLANTACIÓN DE SISTEMAS OPERATIVOS
 
-Equipo: Sergio Gallardo Marchal,  Miriam Ocaña Pérez-Cerdá, Antonio José Rossi Bersabé.
+Equipo: Sergio Gallardo Marchal, Miriam Ocaña Pérez-Cerdá, Antonio José Rossi Bersabé.
 
 # 1. ANÁLISIS DE NECESIDADES DEL SISTEMA
 
