@@ -35,14 +35,14 @@ Para los servidores del CPD y el servidor web de **CyberForge** se ha realizado 
         - *En el entorno real, se configuraría direccionamiento IP estático para integrarse en la VLAN correspondiente (VLAN 60)*
         - En este entorno “simulado”, se deja en DHCP (automático)
             
-            ![image.png](image.png)
+            ![image.png](img/image.png)
             
 3. **Particionado del disco**
     - Se elije usar todo el disco y el sistema crea automáticamente:
         - `/`(sistema)
         - `swap`(memoria virtual)
             
-            ![image.png](image%201.png)
+            ![image.png](img/img/image%201.png)
             
 4. **Creación del usuario administrador**
     - Se configura el nombre de usuario y la contraseña:
@@ -50,23 +50,23 @@ Para los servidores del CPD y el servidor web de **CyberForge** se ha realizado 
         - Contraseña → `*********`
     - Esto simulará el administrador del servidor de CyberForge
         
-        ![image.png](image%202.png)
+        ![image.png](img/img/image%202.png)
         
 5. **Instalación de paquetes básicos**
     - Se marca **Install OpenSSH server**. Esto permitirá:
         - Conectarse remotamente al servidor
         - Administrarlo sin estar físicamente delante
             
-            ![image.png](image%203.png)
+            ![image.png](img/img/image%203.png)
             
 6. **Últimas comprobaciones**
     - Se reinicia la máquina virtual y se ingresa con el nuevo usuario
         
-        ![image.png](image%204.png)
+        ![image.png](img/img/image%204.png)
         
     - Se verifica la conectividad de red y el correcto funcionamiento del sistema tras la instalación
         
-        ![image.png](image%205.png)
+        ![image.png](img/img/image%205.png)
         
 
 **Aunque la instalación se ha realizado en un entorno virtualizado, el procedimiento seguido es equivalente al de un entorno real, permitiendo simular la implantación de servidores en una infraestructura profesional**
@@ -98,13 +98,13 @@ En los equipos de usuario se ha utilizado un sistema de **instalación mediante 
     - 20-40 GB disco
     - Montaje de ISO correspondiente
     
-    ![image.png](image%206.png)
+    ![image.png](img/img/image%206.png)
     
 2. **Instalación de los sistemas operativos → se instalan Ubuntu Desktop y Windows 11 Pro siguiendo los asistentes de instalación.**
     
-    ![image.png](image%207.png)
+    ![image.png](img/img/image%207.png)
     
-    ![image.png](image%208.png)
+    ![image.png](img/img/image%208.png)
     
 3. **Preparación de la imagen → se limpian los sistemas antes de la clonación**
     - Ubuntu Desktop
@@ -122,29 +122,29 @@ En los equipos de usuario se ha utilizado un sistema de **instalación mediante 
     
     - Se añade la ISO de Clonezilla y se arranca la máquina desde esta.
         
-        ![image.png](image%209.png)
+        ![image.png](img/img/image%209.png)
         
     - Se crean las imágenes para los sistemas de Ubuntu y de Windows
     
-    ![image.png](image%2010.png)
+    ![image.png](img/img/image%2010.png)
     
-    ![image.png](image%2011.png)
+    ![image.png](img/img/image%2011.png)
     
-    ![image.png](image%2012.png)
+    ![image.png](img/img/image%2012.png)
     
-    ![image.png](image%2013.png)
+    ![image.png](img/img/image%2013.png)
     
     - Se crea una nueva máquina virtual, se arranca con Clonezilla y se añade la imagen creada desde **restoredisk**. **Ya tenemos un sistema clonado.**
     
-    ![image.png](image%2014.png)
+    ![image.png](img/img/image%2014.png)
     
-    ![image.png](image%2015.png)
+    ![image.png](img/img/image%2015.png)
     
     - A partir de las imágenes clonadas, se crean tantos sistemas Ubuntu y Windows como haga falta, para los siguientes departamentos:
         - Equipos de Administración y Dirección (Windows 11) → `CForge_WindowsSystem`
         - Equipos de Desarrollo. Soporte Técnico y Formación CTF (Ubuntu Desktop) → `CForge_UbuntuSystem`
         
-        ![image.png](image%2016.png)
+        ![image.png](img/img/image%2016.png)
         
 
 ---
@@ -174,65 +174,65 @@ IMPORTANTE: ¿por qué VMware y no VirtualBox? VMware **sí permite virtualizaci
 
 1. **Creación de la máquina virtual**
     
-    ![Se crea una nueva máquina virtual en VMWare Workstation con la ISO de Proxmox](image%2017.png)
+    ![Se crea una nueva máquina virtual en VMWare Workstation con la ISO de Proxmox](img/image%2017.png)
     
     Se crea una nueva máquina virtual en VMWare Workstation con la ISO de Proxmox
     
-    ![image.png](image%2018.png)
+    ![image.png](img/image%2018.png)
     
 2. **Instalación de Proxmox** → se avanza por el asistente configurando disco, red, etc.
     
-    ![Se ha configurado una dirección IP estática en el servidor Proxmox dentro de la red local, permitiendo su acceso mediante interfaz web y simulando un entorno de virtualización empresarial.](image%2019.png)
+    ![Se ha configurado una dirección IP estática en el servidor Proxmox dentro de la red local, permitiendo su acceso mediante interfaz web y simulando un entorno de virtualización empresarial.](img/image%2019.png)
     
     Se ha configurado una dirección IP estática en el servidor Proxmox dentro de la red local, permitiendo su acceso mediante interfaz web y simulando un entorno de virtualización empresarial.
     
-    ![image.png](image%2020.png)
+    ![image.png](img/image%2020.png)
     
-    ![image.png](image%2021.png)
+    ![image.png](img/image%2021.png)
     
 3. **Acceso a Proxmox** → se accede mediante el navegador web: [`https://192.168.1.50:8006`](https://192.168.1.50:8006/)
     - Este es el panel de Proxmox VE:
         
-        ![image.png](image%2022.png)
+        ![image.png](img/image%2022.png)
         
 4. **Creación de una nueva máquina virtual en Proxmox**
     - Se carga la ISO deseada (en este caso, Ubuntu Server, dada su ligereza)
         
-        ![image.png](image%2023.png)
+        ![image.png](img/image%2023.png)
         
     - Se crea la VM con la ISO de Ubuntu Server
         
-        ![image.png](image%2024.png)
+        ![image.png](img/image%2024.png)
         
 5. Instalación de Ubuntu Server en la nueva máquina virtual
     - Se ejecuta el instalador al encender la máquina
         
-        ![image.png](image%2025.png)
+        ![image.png](img/image%2025.png)
         
-        ![image.png](image%2026.png)
+        ![image.png](img/image%2026.png)
         
     - Se reinicia la máquina y se accede al Sistema Operativo
         
-        ![¡ÉXITO!](image%2027.png)
+        ![¡ÉXITO!](img/image%2027.png)
         
         ¡ÉXITO!
         
 6. **Conexión SSH →** para terminar de hacer comprobaciones, se realiza una conexión SSH mediante PuTTY.
     - Nos aseguramos de que ssh esté activado y comprobamos la ip:
         
-        ![image.png](image%2028.png)
+        ![image.png](img/image%2028.png)
         
     - Se realiza la conexión con PuTTY con la ip correspondiente: `192.168.1.66`
         
-        ![image.png](image%2029.png)
+        ![image.png](img/image%2029.png)
         
-        ![¡ÉXITO!](image%2030.png)
+        ![¡ÉXITO!](img/image%2030.png)
         
         ¡ÉXITO!
         
 - Por último, desde la VM en proxmox, se ejecuta `sudo systemctl enable ssh`para que SSH vuelva a arrancar al reiniciar la máquina.
     
-    ![image.png](image%2031.png)
+    ![image.png](img/image%2031.png)
     
 
 ---

@@ -28,18 +28,18 @@ sudo systemctl enable ssh
 sudo systemctl start ssh
 ```
 
-![image.png](image.png)
+![image.png](img/image.png)
 
 - Comprobación:
     
-    ![image.png](image%201.png)
+    ![image.png](img/image%201.png)
     
 
 ### En Windows 11 (Escritorio Remoto)
 
 - Se activa el acceso remoto:
     
-    ![image.png](image%202.png)
+    ![image.png](img/image%202.png)
     
 
 ---
@@ -52,16 +52,16 @@ Permite el acceso a recursos compartidos entre usuarios.
 
 - Se ha creado una carpeta con permisos compartidos para poder compartir archivos **solo** con los grupos `devgroup`y `supgroup`
     
-    ![image.png](image%203.png)
+    ![image.png](img/image%203.png)
     
 
 ### Windows
 
 - Se ha creado una carpeta con permisos compartidos para poder compartir archivos con los usuarios `admuser1`y`diruser1`
     
-    ![image.png](image%204.png)
+    ![image.png](img/image%204.png)
     
-    ![image.png](image%205.png)
+    ![image.png](img/image%205.png)
     
 
 ---
@@ -73,7 +73,7 @@ Permite el acceso a recursos compartidos entre usuarios.
 - Se ha comprobado la conectividad por medio de `ping`en apartados anteriores.
 - Se instalan las herramientas de red en los sistemas Ubuntu restantes (los servidores como CPD)
     
-    ![image.png](image%206.png)
+    ![image.png](img/image%206.png)
     
 
 ```bash
