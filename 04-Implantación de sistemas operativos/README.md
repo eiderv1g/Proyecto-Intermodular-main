@@ -12,13 +12,6 @@ A lo largo del proyecto se han aplicado metodologías profesionales de despliegu
 
 ---
 
-
-El objetivo principal es construir un entorno realista, seguro y segmentado mediante VLANs, capaz de soportar distintos perfiles de usuario (administración, desarrollo, formación, etc.), así como servicios críticos como servidores, virtualización y laboratorios de prácticas.
-
-A lo largo del proyecto se han aplicado metodologías profesionales de despliegue de sistemas, abarcando desde el análisis inicial hasta la instalación, configuración, gestión de usuarios y despliegue de servicios básicos.
-
----
-
 # Índice del Proyecto
 
 ## 1. Análisis de necesidades del sistema
