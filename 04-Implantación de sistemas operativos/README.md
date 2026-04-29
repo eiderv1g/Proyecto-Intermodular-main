@@ -1,4 +1,8 @@
-# Módulo: Implantación de Sistemas Operativos 
+# PROYECTO INTERMODULAR ASIR
+
+# IMPLANTACIÓN DE SISTEMAS OPERATIVOS
+
+Equipo: Sergio Gallardo Marchal,  Miriam Ocaña Pérez-Cerdá, Antonio José Rossi Bersabé.# Módulo: Implantación de Sistemas Operativos 
 
 ## ¿Qué se te pide en este módulo dentro del Proyecto Intermodular?
 
