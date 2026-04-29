@@ -1,141 +1,101 @@
-# PROYECTO INTERMODULAR ASIR
+# CYBERFORGE - IMPLANTACIÓN DE SISTEMAS OPERATIVOS
 
-# IMPLANTACIÓN DE SISTEMAS OPERATIVOS
-
-Equipo: Sergio Gallardo Marchal,  Miriam Ocaña Pérez-Cerdá, Antonio José Rossi Bersabé.# Módulo: Implantación de Sistemas Operativos 
-
-## ¿Qué se te pide en este módulo dentro del Proyecto Intermodular?
-
-En el módulo de Implantación de Sistemas Operativos, tu objetivo será diseñar y documentar la implantación de los sistemas operativos que utilizará la infraestructura informática de tu proyecto.
-
-No se trata solo de instalar un sistema operativo, sino de planificar cómo se despliega, configura y gestiona en un entorno profesional con varios equipos o servidores.
-
-En este módulo se evaluará que seas capaz de:
-
-- Seleccionar sistemas operativos adecuados  
-- Planificar su instalación  
-- Configurar servicios básicos del sistema  
-- Gestionar usuarios y permisos  
-- Documentar todo el proceso de implantación  
-
-El objetivo es demostrar que comprendes cómo se implantan sistemas operativos en infraestructuras reales.
+**Equipo**: Sergio Gallardo Marchal,  Miriam Ocaña Pérez-Cerdá, Antonio José Rossi Bersabé.
 
 ---
 
-## ¿Qué debe incluir tu trabajo?
+**CyberForge** es un proyecto orientado al diseño e implantación de una infraestructura IT para un centro de formación especializado en ciberseguridad.
 
-### 1. Análisis de necesidades del sistema
+El objetivo principal es construir un entorno realista, seguro y segmentado mediante VLANs, capaz de soportar distintos perfiles de usuario (administración, desarrollo, formación, etc.), así como servicios críticos como servidores, virtualización y laboratorios de prácticas.
 
-Debes explicar qué sistemas operativos necesita tu infraestructura.
-
-Por ejemplo:
-
-- Sistema operativo para servidores  
-- Sistema operativo para equipos de usuario  
-- Sistemas específicos según el proyecto  
-
-Debes justificar:
-
-- Qué sistema operativo has elegido  
-- Por qué es adecuado para el entorno del proyecto  
+A lo largo del proyecto se han aplicado metodologías profesionales de despliegue de sistemas, abarcando desde el análisis inicial hasta la configuración de servicios básicos, pasando por la instalación, gestión de usuarios y control de accesos.
 
 ---
 
-### 2. Plan de implantación del sistema operativo
 
-Debes explicar cómo se implantará el sistema operativo en la infraestructura.
+El objetivo principal es construir un entorno realista, seguro y segmentado mediante VLANs, capaz de soportar distintos perfiles de usuario (administración, desarrollo, formación, etc.), así como servicios críticos como servidores, virtualización y laboratorios de prácticas.
 
-Por ejemplo:
-
-- Instalación manual  
-- Instalación automatizada  
-- Instalación mediante imágenes o máquinas virtuales  
-
-Debes describir los pasos principales del proceso de implantación.
+A lo largo del proyecto se han aplicado metodologías profesionales de despliegue de sistemas, abarcando desde el análisis inicial hasta la instalación, configuración, gestión de usuarios y despliegue de servicios básicos.
 
 ---
 
-### 3. Instalación del sistema operativo
+# Índice del Proyecto
 
-Debes documentar el proceso de instalación.
+## 1. Análisis de necesidades del sistema
+Se estudian los requisitos de la infraestructura en función de los distintos departamentos y su función dentro de la red, definiendo los sistemas operativos más adecuados.
 
-Puedes incluir:
+- 1.1 Servidores  
+  - Servidor CPD  
+  - Servidor web  
+  - Servidor LAB  
+- 1.2 Equipos de usuario  
+  - Administración  
+  - Dirección  
+  - Desarrollo  
+  - Soporte técnico  
+  - Formación (Aula CTF)  
+  - Red WiFi  
 
-- Capturas del proceso  
-- Explicación de los pasos principales  
-- Configuración inicial del sistema  
-
-Debe verse claramente que el sistema operativo queda funcionando correctamente.
-
----
-
-### 4. Configuración del sistema
-
-Una vez instalado el sistema operativo, deberás configurar aspectos básicos como:
-
-- Nombre del equipo  
-- Configuración de red  
-- Actualizaciones del sistema  
-- Configuración regional  
-- Instalación de paquetes o software necesario  
-
-El objetivo es que el sistema quede preparado para su uso dentro de la infraestructura.
+📄 Ver documento → 1. Análisis de necesidades del sistema.md  
 
 ---
 
-### 5. Gestión de usuarios y permisos
+## 2. Plan de implantación
+Se definen los métodos de despliegue de los sistemas, adaptando la instalación según el tipo de equipo para optimizar tiempo, recursos y eficiencia.
 
-Debes mostrar cómo se gestionan usuarios y permisos en el sistema.
+- 2.1 Instalación manual (servidores)  
+- 2.2 Instalación mediante imágenes (equipos de usuario)  
+- 2.3 Instalación mediante virtualización (servidor LAB)  
 
-Por ejemplo:
-
-- Creación de usuarios  
-- Creación de grupos  
-- Asignación de permisos  
-- Organización de usuarios según roles  
-
-Esto simula la gestión real de usuarios en un sistema informático.
+📄 Ver documento → 2. Plan de implantación.md  
 
 ---
 
-### 6. Servicios básicos del sistema
+## 3. Instalación del sistema operativo
+Se describe el proceso de instalación en servidores, equipos cliente y entorno de virtualización, tanto en un contexto real como en su simulación.
 
-Debes incluir la configuración de al menos algunos servicios básicos del sistema operativo.
+- 3.1 Instalación manual (Ubuntu Server)  
+- 3.2 Instalación mediante imágenes  
+- 3.3 Instalación mediante virtualización (Proxmox)  
+- 3.4 Conclusión  
 
-Por ejemplo:
-
-- Compartición de archivos  
-- Acceso remoto  
-- Servicios de red básicos  
-- Gestión de procesos o servicios  
-
-No se busca una configuración avanzada, sino entender cómo se gestionan servicios en un sistema operativo.
+📄 Ver documento → 3 Instalación del Sistema Operativo.md  
 
 ---
 
-## Entregables
+## 4. Configuración del sistema
+Se detallan las configuraciones básicas necesarias para dejar los sistemas operativos listos para su uso dentro de la infraestructura.
 
-Para este módulo tendrás que entregar:
+- 4.1 Configuración en servidores  
+- 4.2 Configuración en equipos cliente (Ubuntu)  
+- 4.3 Configuración en equipos cliente (Windows)  
+- 4.4 Configuración del servidor LAB  
+- 4.5 Conclusión  
 
-- Documento de análisis del sistema operativo  
-- Plan de implantación  
-- Documentación de la instalación del sistema  
-- Explicación de la configuración del sistema  
-- Gestión de usuarios y permisos  
-- Descripción de servicios configurados  
-- Repositorio en GitHub con todo organizado  
-- README explicando la implantación del sistema  
+📄 Ver documento → 4 Configuración del sistema.md  
 
 ---
 
-## Rúbrica – Implantación de Sistemas Operativos (0369)
+## 5. Gestión de usuarios y permisos
+Se implementa una estructura de usuarios y grupos, junto con políticas de permisos, para garantizar la seguridad y el control de acceso.
 
-| Criterio                      | Descripción                                           | Puntos |
-|-----------------------------|-------------------------------------------------------|--------|
-| Análisis del sistema         | Justificación del sistema operativo elegido           | 2      |
-| Plan de implantación         | Explicación clara del proceso de despliegue           | 2      |
-| Instalación del sistema      | Documentación correcta de la instalación              | 2      |
-| Configuración del sistema    | Configuración básica adecuada                         | 1,5    |
-| Gestión de usuarios          | Organización correcta de usuarios y permisos          | 1,5    |
-| Servicios del sistema        | Configuración de servicios básicos                    | 0,5    |
-| Organización y documentación | GitHub, README, claridad y orden                      | 0,5    |
+- 5.1 Servidor principal (Ubuntu Server)  
+- 5.2 Equipos Ubuntu Desktop  
+- 5.3 Equipos Windows 11  
+- 5.4 Permisos en Proxmox  
+
+📄 Ver documento → 5 Usuarios y permisos.md  
+
+---
+
+## 6. Servicios básicos del sistema
+Se configuran los servicios esenciales que permiten la comunicación, administración remota y funcionamiento de la red.
+
+- 6.1 Acceso remoto  
+- 6.2 Compartición de archivos  
+- 6.3 Servicios básicos de red  
+- 6.4 Conclusión  
+
+📄 Ver documento → 6 Servicios básicos del sistema.md  
+
+---
