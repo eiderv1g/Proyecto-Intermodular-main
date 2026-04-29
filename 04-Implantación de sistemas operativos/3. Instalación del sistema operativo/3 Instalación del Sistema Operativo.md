@@ -42,7 +42,7 @@ Para los servidores del CPD y el servidor web de **CyberForge** se ha realizado 
         - `/`(sistema)
         - `swap`(memoria virtual)
             
-            ![image.png](img/img/image%201.png)
+            ![image.png](img/image%201.png)
             
 4. **Creación del usuario administrador**
     - Se configura el nombre de usuario y la contraseña:
@@ -50,23 +50,23 @@ Para los servidores del CPD y el servidor web de **CyberForge** se ha realizado 
         - Contraseña → `*********`
     - Esto simulará el administrador del servidor de CyberForge
         
-        ![image.png](img/img/image%202.png)
+        ![image.png](img/image%202.png)
         
 5. **Instalación de paquetes básicos**
     - Se marca **Install OpenSSH server**. Esto permitirá:
         - Conectarse remotamente al servidor
         - Administrarlo sin estar físicamente delante
             
-            ![image.png](img/img/image%203.png)
+            ![image.png](img/image%203.png)
             
 6. **Últimas comprobaciones**
     - Se reinicia la máquina virtual y se ingresa con el nuevo usuario
         
-        ![image.png](img/img/image%204.png)
+        ![image.png](img/image%204.png)
         
     - Se verifica la conectividad de red y el correcto funcionamiento del sistema tras la instalación
         
-        ![image.png](img/img/image%205.png)
+        ![image.png](img/image%205.png)
         
 
 **Aunque la instalación se ha realizado en un entorno virtualizado, el procedimiento seguido es equivalente al de un entorno real, permitiendo simular la implantación de servidores en una infraestructura profesional**
@@ -98,13 +98,13 @@ En los equipos de usuario se ha utilizado un sistema de **instalación mediante 
     - 20-40 GB disco
     - Montaje de ISO correspondiente
     
-    ![image.png](img/img/image%206.png)
+    ![image.png](img/image%206.png)
     
 2. **Instalación de los sistemas operativos → se instalan Ubuntu Desktop y Windows 11 Pro siguiendo los asistentes de instalación.**
     
-    ![image.png](img/img/image%207.png)
+    ![image.png](img/image%207.png)
     
-    ![image.png](img/img/image%208.png)
+    ![image.png](img/image%208.png)
     
 3. **Preparación de la imagen → se limpian los sistemas antes de la clonación**
     - Ubuntu Desktop
@@ -122,29 +122,29 @@ En los equipos de usuario se ha utilizado un sistema de **instalación mediante 
     
     - Se añade la ISO de Clonezilla y se arranca la máquina desde esta.
         
-        ![image.png](img/img/image%209.png)
+        ![image.png](img/image%209.png)
         
     - Se crean las imágenes para los sistemas de Ubuntu y de Windows
     
-    ![image.png](img/img/image%2010.png)
+    ![image.png](img/image%2010.png)
     
-    ![image.png](img/img/image%2011.png)
+    ![image.png](img/image%2011.png)
     
-    ![image.png](img/img/image%2012.png)
+    ![image.png](img/image%2012.png)
     
-    ![image.png](img/img/image%2013.png)
+    ![image.png](img/image%2013.png)
     
     - Se crea una nueva máquina virtual, se arranca con Clonezilla y se añade la imagen creada desde **restoredisk**. **Ya tenemos un sistema clonado.**
     
-    ![image.png](img/img/image%2014.png)
+    ![image.png](img/image%2014.png)
     
-    ![image.png](img/img/image%2015.png)
+    ![image.png](img/image%2015.png)
     
     - A partir de las imágenes clonadas, se crean tantos sistemas Ubuntu y Windows como haga falta, para los siguientes departamentos:
         - Equipos de Administración y Dirección (Windows 11) → `CForge_WindowsSystem`
         - Equipos de Desarrollo. Soporte Técnico y Formación CTF (Ubuntu Desktop) → `CForge_UbuntuSystem`
         
-        ![image.png](img/img/image%2016.png)
+        ![image.png](img/image%2016.png)
         
 
 ---
