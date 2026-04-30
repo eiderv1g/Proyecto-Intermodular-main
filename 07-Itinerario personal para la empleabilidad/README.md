@@ -1,153 +1,58 @@
-# Itinerario Personal para la Empleabilidad I
+# README
 
-## ¿Qué se te pide en este módulo dentro del Proyecto Intermodular?
+# CYBERFORGE - ITINERARIO PERSONAL PARA LA EMPLEABILIDAD I
 
-En este módulo no se evalúa código. Se evalúa cómo te presentas como futuro profesional.
-
-El objetivo es que empieces a construir tu identidad profesional desde 1º:
-
-- Qué tipo de desarrollador/a quieres ser  
-- Qué sabes hacer  
-- Qué te interesa  
-- Cómo explicas tu proyecto  
-- Cómo te presentas online  
-- Cómo empiezas a posicionarte en tu sector  
+**Equipo**: Sergio Gallardo Marchal, Miriam Ocaña Pérez-Cerdá, Antonio José Rossi Bersabé.
 
 ---
 
-## ¿Qué debe incluir tu trabajo?
+**CyberForge** es un proyecto orientado al diseño e implantación de una infraestructura IT para un centro de formación especializado en ciberseguridad.
 
-### 1. Perfil profesional personal
+El objetivo principal de la sección de ITP es elaborar un perfil descriptivo de cada uno de los miembros de equipo exponiendo sus inquietudes profesionales, capacidades, logros e intereses en relación con el proyecto de **Cyberforge** y el ciclo superior de ASIR.
 
-Tendrás que redactar un texto breve donde expliques:
-
-- Qué estás estudiando  
-- Qué tipo de proyectos te gustan  
-- Qué tecnologías estás aprendiendo  
-- En qué te gustaría especializarte  
-- Qué te motiva dentro del mundo tecnológico  
+Además, se ha expuesto CyberForge de cara a una evaluación profesional, como si fuese presentado a una empresa o entrevista para su valoración.
 
 ---
 
-### 2. Exploración del sector profesional
+# Índice del Proyecto
 
-Antes de definir tu perfil, debes investigar el sector al que te gustaría dedicarte.
+## 1. Perfil de Sergio Gallardo
 
-#### Empresas del sector
-
-Investiga al menos 3 empresas que trabajen en el área que te interesa.
-
-Ejemplo:
-
-- Desarrollo web  
-- Videojuegos  
-- IA  
-- Ciberseguridad  
-- Data  
-- Cloud  
-- Apps móviles  
-
-Para cada empresa indica:
-
-- Qué hace la empresa  
-- Qué tipo de perfiles contrata  
-- Qué tecnologías utilizan  
-
-#### Perfiles profesionales a seguir
-
-Busca 2 perfiles profesionales en LinkedIn o GitHub que trabajen en algo parecido a lo que te gustaría hacer.
-
-Explica:
-
-- Qué hacen  
-- Qué proyectos tienen  
-- Qué habilidades destacan  
+- 1.1 Perfil profesional personal
+- 1.2 Exploración del sector profesional
+    - Algunas empresas en mi área de interés
+    - Algunos perfiles profesionales de mi interés
+- 1.3 Perfil profesional online
+- 1.4 Reflexión personal
 
 ---
 
-### 3. Perfil profesional en GitHub
+## 2. Perfil de Miriam Ocaña
 
-Tu GitHub es parte de tu identidad profesional.
-
-Se valorará:
-
-- Bio clara  
-- Repositorios bien nombrados  
-- README principal del proyecto bien explicado  
-- (Opcional) README de perfil  
+- 2.1 Perfil profesional personal
+- 2.2 Exploración del sector profesional
+    - Algunas empresas en mi área de interés
+    - Algunos perfiles profesionales de mi interés
+- 2.3 Perfil profesional online
+- 2.4 Reflexión personal
 
 ---
 
-### 4. Presentación profesional del proyecto
+## 3. Perfil de Antonio Rossi
 
-Debes crear una sección donde expliques tu proyecto como si lo presentaras a una empresa o en una entrevista.
-
-Debe incluir:
-
-- Qué es el proyecto  
-- Qué problema resuelve  
-- Para quién está pensado  
-- Qué tecnologías utiliza  
-- Qué has aprendido desarrollándolo  
+- 3.1 Perfil profesional personal
+- 3.2 Exploración del sector profesional
+    - Algunas empresas en mi área de interés
+    - Algunos perfiles profesionales de mi interés
+- 3.3 Perfil profesional online
+- 3.4 Reflexión personal
 
 ---
 
-### 5. Portfolio básico
+## 4. Presentación profesional de CyberForge
 
-No es una web compleja. Es una estructura mínima donde se vea:
-
-- Tu proyecto  
-- Capturas  
-- Explicación  
-- Enlace al repositorio  
-- Breve descripción de lo que has aprendido  
-
-Esto puede estar en:
-
-- README  
-- Markdown  
-- Web simple  
-- PDF bien presentado  
-
----
-
-### 6. Reflexión personal
-
-Una reflexión corta y sincera sobre:
-
-- Qué has aprendido  
-- Qué se te ha dado mejor  
-- Qué te ha costado más  
-- Qué mejorarías  
-- Qué pasos quieres dar para acercarte al perfil profesional que te interesa  
-
----
-
-## Entregables
-
-En GitHub, en una carpeta:
-
-`/docs/empleabilidad`
-
-Debes entregar:
-
-- Documento de perfil profesional  
-- Investigación del sector profesional  
-- Presentación del proyecto  
-- Portfolio básico  
-- Reflexión final  
-
----
-
-## Rúbrica
-
-| Criterio                     | Descripción                                                   | Puntos |
-|-----------------------------|---------------------------------------------------------------|--------|
-| Perfil profesional          | Definición clara, coherente y realista                        | 2      |
-| Investigación del sector    | Empresas y perfiles profesionales analizados                  | 1      |
-| Perfil en GitHub            | Bien presentado, organizado y profesional                     | 2      |
-| Presentación del proyecto   | Clara, estructurada y orientada a empleabilidad               | 2      |
-| Portfolio básico            | Muestra bien el proyecto y los aprendizajes                   | 1,5    |
-| Coherencia global           | Todo encaja con el perfil profesional                         | 1      |
-| Reflexión personal          | Realista, crítica y bien argumentada                          | 0,5    |
-| Organización y presentación | Orden, claridad y buena presentación                          | 0,5    |
+- 4.1 ¿Qué es CyberForge?
+- 4.2 Objetivos y público objetivo
+- 4.3 Tecnologías utilizadas
+- 4.4 Aprendizaje en equipo
+- 4.5 Presentación online y portfolio
