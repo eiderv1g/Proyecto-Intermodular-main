@@ -52,7 +52,7 @@ Esta parte debe ser tratada con cuidado en la implantación de sistemas operativ
 
 ### Solo la VLAN40-SOPORTE tiene acceso para acceder a los dispositivos de red de la VLAN99-MGMT.
 
-![ACL MGMT solo SOPORTE](img/acl_mgmt_soporte_only.png)
+![ACL MGMT solo SOPORTE](img/acl_block_invitados.png)
 
 ---
 
