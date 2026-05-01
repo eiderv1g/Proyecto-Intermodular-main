@@ -4,13 +4,13 @@
 
 ### Definición de VLANs en uno de los switches (se hizo del mismo modo en los cuatro):
 
-![Definición de VLANs en switch](img/cfg_vlans_switch.png)
+![Definición de VLANs en switch](img/cfg_telnet_switch_password.png)
 
 ---
 
 ### Relación de cada interfaz del switch con su VLAN correspondiente (en la imagen, las correspondientes a VLAN60-SRC y VLAN 61-LAB):
 
-![Interfaces VLAN60 y VLAN61](img/cfg_interfaces_vlan60_61.png)
+![Interfaces VLAN60 y VLAN61](img/cfg_vlans_switch.png)
 
 ---
 
