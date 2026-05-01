@@ -18,15 +18,15 @@ documentar la red interna de la empresa utilizando Cisco Packet Tracer.
 
 ### Planta baja
 
--   Recepción\
--   Administración\
--   Dirección\
+-   Recepción
+-   Administración
+-   Dirección
 -   Sala de servidores (CPD)
 
 ### Primera planta
 
--   Desarrollo\
--   Soporte técnico\
+-   Desarrollo
+-   Soporte técnico
 -   Aula de formación
 
 ------------------------------------------------------------------------
@@ -35,11 +35,11 @@ documentar la red interna de la empresa utilizando Cisco Packet Tracer.
 
 En Packet Tracer deberás usar, como mínimo:
 
--   1 Router Cisco\
--   2 Switches gestionables\
--   1 Switch de acceso por planta\
--   2 PCs para cada departamento\
--   Servidores (2 ó +)\
+-   1 Router Cisco
+-   2 Switches gestionables
+-   1 Switch de acceso por planta
+-   2 PCs para cada departamento
+-   Servidores (2 ó +)
 -   1 Punto de acceso WiFi
 
 *(Se puede añadir más equipamiento si se justifica)*
@@ -62,7 +62,7 @@ En Packet Tracer deberás usar, como mínimo:
 
 Debes implementar **inter-VLAN routing** usando una de estas opciones:
 
--   Router-on-a-stick\
+-   Router-on-a-stick
 -   Switch capa 3
 
 **Obligatorio:** justificar en la documentación la opción elegida.
@@ -73,9 +73,9 @@ Debes implementar **inter-VLAN routing** usando una de estas opciones:
 
 Configura ACLs para cumplir las siguientes políticas:
 
--   El aula de formación no puede acceder a Dirección\
--   Desarrollo no puede acceder a Administración\
--   Administración sí puede acceder a Servidores\
+-   El aula de formación no puede acceder a Dirección
+-   Desarrollo no puede acceder a Administración
+-   Administración sí puede acceder a Servidores
 -   Solo la VLAN MGMT puede administrar dispositivos de red
 
 ------------------------------------------------------------------------
@@ -84,16 +84,16 @@ Configura ACLs para cumplir las siguientes políticas:
 
 Configurar un punto de acceso con:
 
--   SSID_EMPRESA → VLAN empleados\
+-   SSID_EMPRESA → VLAN empleados
 -   SSID_INVITADOS → VLAN aislada (solo salida a Internet)
 
 ------------------------------------------------------------------------
 
 ## Debes demostrar:
 
--   Conectividad dentro de la misma VLAN\
--   Conectividad entre VLANs permitidas\
--   Bloqueo correcto por ACLs\
+-   Conectividad dentro de la misma VLAN
+-   Conectividad entre VLANs permitidas
+-   Bloqueo correcto por ACLs
 -   Asignación automática de IP por DHCP
 
 ------------------------------------------------------------------------
@@ -103,14 +103,14 @@ Configurar un punto de acceso con:
 En tu repositorio GitHub deberás incluir una carpeta llamada **redes**,
 que debe contener:
 
--   Archivo `.pkt` (Cisco Packet Tracer)\
+-   Archivo `.pkt` (Cisco Packet Tracer)
 
 -   Y un documento PDF con:
 
-    -   Esquema lógico y físico\
-    -   Tabla de direccionamiento IP\
-    -   Configuraciones relevantes\
-    -   Pruebas realizadas (capturas)\
+    -   Esquema lógico y físico
+    -   Tabla de direccionamiento IP
+    -   Configuraciones relevantes
+    -   Pruebas realizadas (capturas)
     -   Conclusiones finales
 
 ------------------------------------------------------------------------
