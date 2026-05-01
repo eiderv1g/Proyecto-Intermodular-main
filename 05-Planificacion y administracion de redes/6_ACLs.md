@@ -40,7 +40,7 @@ El comando `line vty 0 4` aplica esta norma a todos los switches, para restringi
 
 Esta parte debe ser tratada con cuidado en la implantación de sistemas operativos virtuales y firewalls al servidor y a los dispositivos que tienen acceso.
 
-![ACL ISOLATE-LAB](img/acl_isolate_lab.png)
+![ACL ISOLATE-LAB](img/acl_telnet_router_password.png)
 
 ---
 
