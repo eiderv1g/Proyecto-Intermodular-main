@@ -58,7 +58,7 @@ Esta parte debe ser tratada con cuidado en la implantación de sistemas operativ
 
 ### Contraseña de acceso TELNET hacia el router en la VLAN99-MGMT (solo posible desde VLAN40-SOPORTE).
 
-![Contraseña TELNET router](img/acl_telnet_router_password.png)
+![Contraseña TELNET router](img/acl_mgmt_soporte_only.png)
 
 ---
 
