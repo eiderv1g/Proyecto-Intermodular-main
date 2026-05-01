@@ -24,7 +24,7 @@ Las políticas de acceso a implementar son las mismas que se piden en la guía d
 
 ### Solo la VLAN99-MGMT puede administrar dispositivos de red.
 
-![ACL MGMT-ONLY standard](img/acl_mgmt_only_standard.png)
+![ACL MGMT-ONLY standard](img/acl_block_dev_admin.png)
 
 El comando `line vty 0 4` aplica esta norma a todos los switches, para restringir el acceso SSH/Telnet a la VLAN99.
 
