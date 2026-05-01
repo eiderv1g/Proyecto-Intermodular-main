@@ -4,11 +4,11 @@ La siguiente estimación se ha realizado con la **calculadora oficial de AWS**.
 
 ### Desglose por servicio
 
-![Estimación de costes por servicio](imagenes/estimacion_costes.png)
+![Estimación de costes por servicio](img/estimacion_costes.png)
 
 ### Coste total mensual y anual
 
-![Coste total](imagenes/costes_total.png)
+![Coste total](img/costes_total.png)
 
 ### Servicios con Free Tier o descuentos
 
