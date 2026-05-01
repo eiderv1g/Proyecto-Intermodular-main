@@ -18,8 +18,6 @@ Las políticas de acceso a implementar son las mismas que se piden en la guía d
 
 ### Administración SÍ PUEDE acceder a servidores.
 
-![Ping ADMIN a SRV (1)](img/acl_admin_srv_ping.png)
-
 ![Ping ADMIN a SRV (2)](img/acl_admin_srv_ping2.png)
 
 ---
