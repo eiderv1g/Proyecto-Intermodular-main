@@ -10,4 +10,4 @@ Vamos a plantear una **arquitectura híbrida**, combinando la red local del aula
 
 - **Base de datos:** alojada en otra subred privada de la VPC, con toda la información relevante del centro, de los profesores y del alumnado. Los alumnos podrán acceder a sus datos desde su perfil en la web (progreso en lecciones, reservas en el centro presencial, etc.). El servicio que gestionará la base de datos es RDS, administrada por el departamento de Administración.
 
-![Diagrama de arquitectura Cloud](imagenes/arquitectura_cloud.png)
+![Diagrama de arquitectura Cloud](img/arquitectura_cloud.png)
