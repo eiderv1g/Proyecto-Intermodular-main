@@ -1,138 +1,161 @@
-# Módulo: Planificación y Administración de Redes 
+# 1º ASIR -- Planificación y Administración de Redes
 
-## ¿Qué se te pide en este módulo dentro del Proyecto Intermodular?
+## Proyecto Intermodular
 
-En el módulo de Planificación y Administración de Redes, tu objetivo será diseñar y documentar la infraestructura de red que utilizará el sistema informático de tu proyecto.
+**Curso 25-26**
 
-No se trata solo de dibujar una red, sino de planificar cómo se organiza, cómo se direcciona y cómo se administran los recursos de red en un entorno profesional.
+**Autora:** Olga M. Moreno Martín
 
-En este módulo se evaluará que seas capaz de:
+------------------------------------------------------------------------
 
-- Diseñar la topología de red de la infraestructura  
-- Definir el direccionamiento IP  
-- Identificar los dispositivos de red necesarios  
-- Explicar cómo se gestionan y administran los servicios de red  
+## Planificación y Administración de Redes 0370
 
-El objetivo es demostrar que comprendes cómo se planifican y administran redes en sistemas informáticos reales.
+La empresa necesita una infraestructura de red profesional, segura y
+escalable.
 
----
+El departamento de IT ha sido contratado para diseñar, implementar y
+documentar la red interna de la empresa utilizando Cisco Packet Tracer.
 
-## ¿Qué debe incluir tu trabajo?
+### Planta baja
 
-### 1. Análisis de necesidades de red
+-   Recepción\
+-   Administración\
+-   Dirección\
+-   Sala de servidores (CPD)
 
-Debes analizar qué necesidades de red tiene el sistema que has diseñado.
+### Primera planta
 
-Debes identificar:
+-   Desarrollo\
+-   Soporte técnico\
+-   Aula de formación
 
-- Número de equipos conectados  
-- Tipo de dispositivos (PC, servidores, impresoras, etc.)  
-- Acceso a internet  
-- Servicios que se ofrecerán en la red  
+------------------------------------------------------------------------
 
-Esto permitirá entender qué tipo de red necesita el sistema.
+## Equipamiento mínimo (obligatorio)
 
----
+En Packet Tracer deberás usar, como mínimo:
 
-### 2. Diseño de la topología de red
+-   1 Router Cisco\
+-   2 Switches gestionables\
+-   1 Switch de acceso por planta\
+-   2 PCs para cada departamento\
+-   Servidores (2 ó +)\
+-   1 Punto de acceso WiFi
 
-Debes diseñar un diagrama de red donde se represente la infraestructura.
+*(Se puede añadir más equipamiento si se justifica)*
 
-Debe incluir:
+------------------------------------------------------------------------
 
-- Equipos de usuario  
-- Servidores  
-- Switches  
-- Router o gateway  
-- Conexión a internet  
+## VLANs obligatorias
 
-El diagrama debe ser claro y coherente con el proyecto.
+  VLAN   Nombre      Departamento     Red IP
+  ------ ----------- ---------------- -----------------
+  10     ADMIN       Administración   192.168.10.0/24
+  20     DIR         Dirección        192.168.20.0/24
+  30     DEV         Desarrollo       192.168.30.0/24
+  40     SOPORTE     Soporte          192.168.40.0/24
+  50     FORMACION   Aula             192.168.50.0/24
+  60     SRV         Servidores       192.168.60.0/24
+  99     MGMT        Gestión          192.168.99.0/24
 
-Puedes utilizar herramientas como:
+------------------------------------------------------------------------
 
-- diagrams.net  
-- draw.io  
-- Visio  
-- Cualquier herramienta de diagramas  
+Debes implementar **inter-VLAN routing** usando una de estas opciones:
 
----
+-   Router-on-a-stick\
+-   Switch capa 3
 
-### 3. Plan de direccionamiento IP
+**Obligatorio:** justificar en la documentación la opción elegida.
 
-Debes definir cómo se organizarán las direcciones IP dentro de la red.
+------------------------------------------------------------------------
 
-Debes incluir:
+## Configuración de seguridad (ACLs)
 
-- Dirección de red  
-- Máscara de red  
-- Rango de direcciones  
-- Dirección del gateway  
-- IP de equipos importantes  
+Configura ACLs para cumplir las siguientes políticas:
 
-Por ejemplo:
+-   El aula de formación no puede acceder a Dirección\
+-   Desarrollo no puede acceder a Administración\
+-   Administración sí puede acceder a Servidores\
+-   Solo la VLAN MGMT puede administrar dispositivos de red
 
-- Red: 192.168.10.0/24  
-- Gateway: 192.168.10.1  
-- Servidor: 192.168.10.10  
-- Equipos cliente: 192.168.10.100 – 192.168.10.200  
+------------------------------------------------------------------------
 
-El direccionamiento debe ser lógico y organizado.
+## Red inalámbrica
 
----
+Configurar un punto de acceso con:
 
-### 4. Dispositivos de red
+-   SSID_EMPRESA → VLAN empleados\
+-   SSID_INVITADOS → VLAN aislada (solo salida a Internet)
 
-Debes identificar los dispositivos de red necesarios para el sistema.
+------------------------------------------------------------------------
 
-Por ejemplo:
+## Debes demostrar:
 
-- Router  
-- Switch  
-- Puntos de acceso WiFi  
-- Firewall  
+-   Conectividad dentro de la misma VLAN\
+-   Conectividad entre VLANs permitidas\
+-   Bloqueo correcto por ACLs\
+-   Asignación automática de IP por DHCP
 
-Debes explicar qué función cumple cada dispositivo en la red.
+------------------------------------------------------------------------
 
----
+## Entregable
 
-### 5. Servicios de red básicos
+En tu repositorio GitHub deberás incluir una carpeta llamada **redes**,
+que debe contener:
 
-Debes explicar qué servicios de red existirían en la infraestructura.
+-   Archivo `.pkt` (Cisco Packet Tracer)\
 
-Por ejemplo:
+-   Y un documento PDF con:
 
-- DHCP  
-- DNS  
-- Compartición de archivos  
-- Acceso remoto  
-- Servicios web o aplicaciones  
+    -   Esquema lógico y físico\
+    -   Tabla de direccionamiento IP\
+    -   Configuraciones relevantes\
+    -   Pruebas realizadas (capturas)\
+    -   Conclusiones finales
 
-No es necesario implementarlos todos, pero sí explicar cómo funcionarían dentro de la red.
+------------------------------------------------------------------------
 
----
+## Rúbrica
 
-## Entregables
+  ------------------------------------------------------------------------------
+  Nº   Criterio            Descripción                                  Puntos
+  ---- ------------------- -------------------------------------------- --------
+  1    Documentación y     La documentación explica correctamente los   1
+       análisis            requisitos, decisiones técnicas, esquemas    
+                           lógico y físico, direccionamiento IP,        
+                           pruebas y conclusiones.                      
 
-Para este módulo tendrás que entregar:
+  2    Diseño lógico de la Segmentación correcta por VLANs,             1
+       red                 departamentos y funciones, con estructura    
+                           clara y coherente.                           
 
-- Documento de análisis de necesidades de red  
-- Diagrama de topología de red  
-- Plan de direccionamiento IP  
-- Descripción de dispositivos de red  
-- Explicación de servicios de red  
-- Repositorio en GitHub con todo organizado  
-- README explicando la arquitectura de red  
+  3    Diseño de la red    Topología jerárquica bien organizada,        1
+       LAN física          switches de acceso por planta, enlaces       
+                           troncales correctos y CPD bien definido.     
 
----
+  4    Uso del             Todo el equipamiento obligatorio está        1
+       equipamiento        presente y correctamente utilizado; el       
+                           adicional está justificado.                  
 
-## Rúbrica – Sistemas Informáticos (0483)
+  5    Configuración de    Creación, nombrado y asignación correcta de  1
+       VLANs               todas las VLANs obligatorias.                
 
-| Criterio                      | Descripción                                           | Puntos |
-|-----------------------------|-------------------------------------------------------|--------|
-| Análisis de necesidades      | Identificación correcta de necesidades de red         | 2      |
-| Diseño de topología          | Diagrama claro y coherente                            | 2      |
-| Plan de direccionamiento     | Organización lógica de direcciones IP                 | 2      |
-| Dispositivos de red          | Identificación y explicación correcta                 | 1,5    |
-| Servicios de red             | Explicación de servicios dentro de la red             | 1,5    |
-| Integración con el proyecto  | Coherencia con la infraestructura diseñada            | 0,5    |
-| Organización y documentación | GitHub, README, claridad y orden                      | 0,5    |
+  6    Direccionamiento IP Direccionamiento conforme a la tabla y       1
+       y DHCP              asignación automática de IP funcional en     
+                           todas las VLANs.                             
+
+  7    Enrutamiento        Inter-VLAN routing correctamente             1
+       inter-VLAN          implementado y justificado                   
+                           (Router-on-a-stick o Switch L3).             
+
+  8    Seguridad mediante  ACLs correctamente configuradas cumpliendo   1
+       ACLs                todas las políticas de acceso establecidas.  
+
+  9    Red inalámbrica     Punto de acceso con SSID de empleados e      1
+                           invitados correctamente segmentados y        
+                           aislados.                                    
+
+  10   Pruebas y           Se demuestran conectividad, bloqueos por     1
+       funcionamiento      ACL, DHCP y funcionamiento general de la     
+                           red.                                         
+  ------------------------------------------------------------------------------
