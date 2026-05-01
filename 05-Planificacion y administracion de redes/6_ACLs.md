@@ -12,7 +12,7 @@ Las políticas de acceso a implementar son las mismas que se piden en la guía d
 
 ### Desarrollo NO PUEDE acceder a administración.
 
-![ACL BLOCK-DEV-ADMIN](img/acl_block_dev_admin.png)
+![ACL BLOCK-DEV-ADMIN](img/acl_block_formacion_dir.png)
 
 ---
 
