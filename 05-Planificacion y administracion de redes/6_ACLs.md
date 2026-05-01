@@ -6,7 +6,7 @@ Las políticas de acceso a implementar son las mismas que se piden en la guía d
 
 ### El aula de formación NO PUEDE acceder a dirección.
 
-![ACL BLOCK-FORMACION-DIR](img/acl_block_formacion_dir.png)
+![ACL BLOCK-FORMACION-DIR](img/acl_block_form_dir.png)
 
 ---
 
