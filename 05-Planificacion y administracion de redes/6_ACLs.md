@@ -66,4 +66,4 @@ Esta parte debe ser tratada con cuidado en la implantación de sistemas operativ
 
 Se añade el comando `transport input telnet` para garantizar la estabilidad de la conexión. Se realiza una configuración idéntica en los cuatro switches:
 
-![Contraseña TELNET switch](img/cfg_telnet_switch_password.png)
+![Contraseña TELNET switch](img/cfg_interfaces_vlan60_61.png)
