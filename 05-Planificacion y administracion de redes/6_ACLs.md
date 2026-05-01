@@ -46,7 +46,7 @@ Esta parte debe ser tratada con cuidado en la implantación de sistemas operativ
 
 ### Aislamiento de la VLAN80 del wifi de invitados del resto de la red.
 
-![ACL BLOCK-INVITADOS](img/acl_block_invitados.png)
+![ACL BLOCK-INVITADOS](img/acl_isolate_lab.png)
 
 ---
 
