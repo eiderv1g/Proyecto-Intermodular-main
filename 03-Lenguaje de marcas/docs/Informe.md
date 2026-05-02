@@ -1,4 +1,4 @@
-# Informe del Módulo: Lenguajes de Marcas
+# Informe del Proyecto: Lenguajes de Marcas
 
 **Proyecto:** CyberForge — Centro de formación en ciberseguridad  
 **Módulo:** Lenguajes de Marcas y Sistemas de Gestión de Información 
