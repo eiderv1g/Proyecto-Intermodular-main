@@ -1,0 +1,105 @@
+
+<!ELEMENT cyberforge (alumnos, departamentos, empleados, laboratorios, desafios, eventos, matriculas, participaciones, progresos, incidencias)>
+
+
+<!ELEMENT alumnos (alumno+)>
+<!ELEMENT alumno (nombre, email)>
+<!ATTLIST alumno
+    id        ID      #REQUIRED
+    telefono  CDATA   #REQUIRED
+>
+
+
+<!ELEMENT departamentos (departamento+)>
+<!ELEMENT departamento (nombre)>
+<!ATTLIST departamento
+    id       ID                       #REQUIRED
+    equipoHW (Servidores | PCs) #REQUIRED
+>
+
+
+<!ELEMENT empleados (empleado+)>
+<!ELEMENT empleado (nombre, email)>
+<!ATTLIST empleado
+    id                  ID                          #REQUIRED
+    rol                 (instructor | soporte | admin) #REQUIRED
+    salario             CDATA                       #REQUIRED
+    fecha_contratacion  CDATA                       #REQUIRED
+    departamento        IDREF                       #REQUIRED
+>
+
+
+<!ELEMENT laboratorios (laboratorio+)>
+<!ELEMENT laboratorio (nombre, descripcion)>
+<!ATTLIST laboratorio
+    id          ID                      #REQUIRED
+    sistema     (Linux | Windows | Web) #REQUIRED
+    dificultad  (easy | medium | hard)  #REQUIRED
+    instructor  IDREF                   #REQUIRED
+>
+
+
+<!ELEMENT desafios (desafio+)>
+<!ELEMENT desafio (titulo, descripcion)>
+<!ATTLIST desafio
+    id          ID                                                        #REQUIRED
+    tipo        (practica | privilege_escalation | web | forense | cripto) #REQUIRED
+    dificultad  (easy | medium | hard)                                    #REQUIRED
+    laboratorio IDREF                                                     #REQUIRED
+>
+
+
+<!ELEMENT eventos (evento+)>
+<!ELEMENT evento (nombre, descripcion)>
+<!ATTLIST evento
+    id           ID    #REQUIRED
+    fecha_inicio CDATA #REQUIRED
+    fecha_fin    CDATA #REQUIRED
+>
+
+
+<!ELEMENT matriculas (matricula+)>
+<!ELEMENT matricula EMPTY>
+<!ATTLIST matricula
+    id              ID                                  #REQUIRED
+    alumno          IDREF                               #REQUIRED
+    estado          (activa | suspendida | finalizada)  #REQUIRED
+    fecha_matricula CDATA                               #REQUIRED
+>
+
+
+<!ELEMENT participaciones (participacion+)>
+<!ELEMENT participacion EMPTY>
+<!ATTLIST participacion
+    id     ID    #REQUIRED
+    alumno IDREF #REQUIRED
+    evento IDREF #REQUIRED
+>
+
+
+<!ELEMENT progresos (progreso+)>
+<!ELEMENT progreso EMPTY>
+<!ATTLIST progreso
+    id         ID          #REQUIRED
+    alumno     IDREF       #REQUIRED
+    desafio    IDREF       #REQUIRED
+    fecha      CDATA       #REQUIRED
+    completado (si | no)   #REQUIRED
+>
+
+
+<!ELEMENT incidencias (incidencia+)>
+<!ELEMENT incidencia (titulo, descripcion)>
+<!ATTLIST incidencia
+    id             ID                              #REQUIRED
+    alumno         IDREF                           #REQUIRED
+    empleado       IDREF                           #REQUIRED
+    estado         (abierta | en_proceso | cerrada) #REQUIRED
+    fecha_creacion CDATA                           #REQUIRED
+>
+
+
+<!ELEMENT nombre      (#PCDATA)>
+<!ELEMENT email       (#PCDATA)>
+<!ELEMENT descripcion (#PCDATA)>
+<!ELEMENT titulo      (#PCDATA)>

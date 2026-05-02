@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE cyberforge SYSTEM "modelo.dtd">
+
+<!--
+  XML INTENCIONALMENTE INCORRECTO - Demuestra que el DTD detecta errores
+  ERROR 1 (línea ~16): rol="hacker" no está en la enumeración (instructor|soporte|admin)
+  ERROR 2 (línea ~35): dificultad="extreme" no está en la enumeración (easy|medium|hard)
+  ERROR 3 (línea ~47): empleado="e99" apunta a un ID que no existe (IDREF inválido)
+-->
+
+<cyberforge>
+    <alumnos>
+        <alumno id="a1" telefono="600123123">
+            <nombre>Antonio Rossi</nombre>
+            <email>antonio@email.com</email>
+        </alumno>
+    </alumnos>
+    <departamentos>
+        <departamento id="d1" equipoHW="Servidores">
+            <nombre>IT</nombre>
+        </departamento>
+    </departamentos>
+    <empleados>
+        <!-- ERROR 1: rol "hacker" no existe en la enumeración del DTD -->
+        <empleado id="e1" rol="hacker" salario="2000" fecha_contratacion="2024-01-01" departamento="d1">
+            <nombre>Carlos Ruiz</nombre>
+            <email>carlos@empresa.com</email>
+        </empleado>
+    </empleados>
+    <laboratorios>
+        <!-- ERROR 2: dificultad "extreme" no existe en la enumeración del DTD -->
+        <laboratorio id="lab1" sistema="Linux" dificultad="extreme" instructor="e1">
+            <nombre>Linux Básico</nombre>
+            <descripcion>Intro a Linux</descripcion>
+        </laboratorio>
+    </laboratorios>
+    <desafios>
+        <desafio id="ch1" tipo="practica" dificultad="easy" laboratorio="lab1">
+            <titulo>Intro Linux</titulo>
+            <descripcion>Comandos básicos</descripcion>
+        </desafio>
+    </desafios>
+    <eventos>
+        <evento id="ev1" fecha_inicio="2026-03-01" fecha_fin="2026-03-03">
+            <nombre>CTF Marzo</nombre>
+            <descripcion>Evento mensual</descripcion>
+        </evento>
+    </eventos>
+    <matriculas>
+        <matricula id="mat1" alumno="a1" estado="activa" fecha_matricula="2026-01-01"/>
+    </matriculas>
+    <participaciones>
+        <participacion id="par1" alumno="a1" evento="ev1"/>
+    </participaciones>
+    <progresos>
+        <progreso id="pr1" alumno="a1" desafio="ch1" fecha="2026-03-02" completado="si"/>
+    </progresos>
+    <incidencias>
+        <!-- ERROR 3: empleado="e99" referencia un ID que no existe -->
+        <incidencia id="inc1" alumno="a1" empleado="e99" estado="abierta" fecha_creacion="2026-03-05">
+            <titulo>Error login</titulo>
+            <descripcion>No puedo acceder</descripcion>
+        </incidencia>
+    </incidencias>
+</cyberforge>
