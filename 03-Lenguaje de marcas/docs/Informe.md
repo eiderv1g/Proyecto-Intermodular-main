@@ -100,6 +100,7 @@ Abrir `docs/reporte.html` en cualquier navegador. Incluimos una copia del report
 En esta carpeta **/docs** se incluyen dos **capturas de pantalla**:
 
 **xsl_transform.png** demuestra la generación de un reporte html usando xsltproc
+
 **dtd_valid_and_dtd_error.png** demuestra la validación DTD del datos.xml, y la no-validación de datos_error.xml .
 
 ## 5. Cómo encaja en el proyecto
