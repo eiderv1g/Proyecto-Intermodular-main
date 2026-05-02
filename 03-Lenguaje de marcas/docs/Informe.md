@@ -1,6 +1,6 @@
 # Informe del Módulo: Lenguajes de Marcas
 
-**Proyecto:** CyberForge — Plataforma de formación en ciberseguridad  
+**Proyecto:** CyberForge — Centro de formación en ciberseguridad  
 **Módulo:** Lenguajes de Marcas y Sistemas de Gestión de Información 
 **Curso:** 25-26 | 1º ASIR
 **Equipo**: Sergio Gallardo Marchal, Miriam Ocaña Pérez-Cerdá, Antonio Rossi Besabé
