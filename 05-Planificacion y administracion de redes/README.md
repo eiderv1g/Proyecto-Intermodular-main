@@ -4,115 +4,30 @@
 
 **Curso 25-26**
 
-**Autora:** Olga M. Moreno Martín
+**Proyecto CyberForge**
+
+**Equipo:** Sergio Gallardo Marchal, Miriam Ocaña Pérez-Cerdá, Antonio Rossi Besabé
 
 ------------------------------------------------------------------------
 
-## Planificación y Administración de Redes 0370
+En este apartado del Proyecto Intermodular tenemos la simulación de la planificación de redes de CyberForge. 
 
-La empresa necesita una infraestructura de red profesional, segura y
-escalable.
+### Índice
 
-El departamento de IT ha sido contratado para diseñar, implementar y
-documentar la red interna de la empresa utilizando Cisco Packet Tracer.
-
-### Planta baja
-
--   Recepción
--   Administración
--   Dirección
--   Sala de servidores (CPD)
-
-### Primera planta
-
--   Desarrollo
--   Soporte técnico
--   Aula de formación
-
-------------------------------------------------------------------------
-
-## Equipamiento mínimo (obligatorio)
-
-En Packet Tracer deberás usar, como mínimo:
-
--   1 Router Cisco
--   2 Switches gestionables
--   1 Switch de acceso por planta
--   2 PCs para cada departamento
--   Servidores (2 ó +)
--   1 Punto de acceso WiFi
-
-*(Se puede añadir más equipamiento si se justifica)*
-
-------------------------------------------------------------------------
-
-## VLANs obligatorias
-
-  VLAN   Nombre      Departamento     Red IP
-  ------ ----------- ---------------- -----------------
-  10     ADMIN       Administración   192.168.10.0/24
-  20     DIR         Dirección        192.168.20.0/24
-  30     DEV         Desarrollo       192.168.30.0/24
-  40     SOPORTE     Soporte          192.168.40.0/24
-  50     FORMACION   Aula             192.168.50.0/24
-  60     SRV         Servidores       192.168.60.0/24
-  99     MGMT        Gestión          192.168.99.0/24
-
-------------------------------------------------------------------------
-
-Debes implementar **inter-VLAN routing** usando una de estas opciones:
-
--   Router-on-a-stick
--   Switch capa 3
-
-**Obligatorio:** justificar en la documentación la opción elegida.
-
-------------------------------------------------------------------------
-
-## Configuración de seguridad (ACLs)
-
-Configura ACLs para cumplir las siguientes políticas:
-
--   El aula de formación no puede acceder a Dirección
--   Desarrollo no puede acceder a Administración
--   Administración sí puede acceder a Servidores
--   Solo la VLAN MGMT puede administrar dispositivos de red
-
-------------------------------------------------------------------------
-
-## Red inalámbrica
-
-Configurar un punto de acceso con:
-
--   SSID_EMPRESA → VLAN empleados
--   SSID_INVITADOS → VLAN aislada (solo salida a Internet)
-
-------------------------------------------------------------------------
-
-## Debes demostrar:
-
--   Conectividad dentro de la misma VLAN
--   Conectividad entre VLANs permitidas
--   Bloqueo correcto por ACLs
--   Asignación automática de IP por DHCP
-
-------------------------------------------------------------------------
-
-## Entregable
-
-En tu repositorio GitHub deberás incluir una carpeta llamada **redes**,
-que debe contener:
-
--   Archivo `.pkt` (Cisco Packet Tracer)
-
--   Y un documento PDF con:
-
-    -   Esquema lógico y físico
-    -   Tabla de direccionamiento IP
-    -   Configuraciones relevantes
-    -   Pruebas realizadas (capturas)
-    -   Conclusiones finales
-
+- **1. Presentación**
+ 
+- **2. Equipo Adicional**
+ 
+- **3. Tabla de VLANs**
+     
+- **4. Diseño de la red**
+     
+- **5. Tabla de direccionamientos IP**
+     
+- **6. Access Control Lists**
+     
+- **7. Configuraciones y pruebas de funcionamiento**
+ 
 ------------------------------------------------------------------------
 
 ## Rúbrica
