@@ -17,7 +17,7 @@ En el módulo de Gestión de Base de Datos se ha diseñado y creado una base de 
 
 ## 2. Diseño de la base de datos
 - Se crea tanto el Modelo E/R como el modelo RELACIONAL para estructurar la BBDD. [Revisa este documento](https://github.com/eiderv1g/Proyecto-Intermodular-main/blob/4a971da75c195ce82fcdc69197ffea4972faa2ba/01-Gestion%20de%20bases%20de%20datos/Modelo%20ER/Proyecto%20Intermodular%20BBDD%20Modelo%20ER.drawio)
-[Revisa este documento](https://github.com/eiderv1g/Proyecto-Intermodular-main/blob/4a971da75c195ce82fcdc69197ffea4972faa2ba/01-Gestion%20de%20bases%20de%20datos/Modelo%20ER/Proyecto%20Intermodular%20BBDD%20Modelo%20ER.drawio)
+[Revisa este documento](https://github.com/eiderv1g/Proyecto-Intermodular-main/blob/459dc988907efc6cb0eb372ea45803cd8eefb1f1/01-Gestion%20de%20bases%20de%20datos/Modelo%20Relacional/Proyecto%20Intermodular%20BBDD%20Modelo%20Relacional.drawio)
 
 ## 3. Creación de la base de datos
 - Script con la creación de la base de datos. [Revisa este documento](https://github.com/eiderv1g/Proyecto-Intermodular-main/blob/525197857179126aad40b19ca63963e070de8a2d/01-Gestion%20de%20bases%20de%20datos/Creaci%C3%B3n%20BBDD%20Proyecto%20Intermodular.ipynb)
