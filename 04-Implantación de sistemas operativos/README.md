@@ -29,7 +29,6 @@ Se estudian los requisitos de la infraestructura en función de los distintos de
   - Formación (Aula CTF)  
   - Red WiFi  
 
-📄 Ver documento → 1. Análisis de necesidades del sistema.md  
 
 ---
 
@@ -40,7 +39,6 @@ Se definen los métodos de despliegue de los sistemas, adaptando la instalación
 - 2.2 Instalación mediante imágenes (equipos de usuario)  
 - 2.3 Instalación mediante virtualización (servidor LAB)  
 
-📄 Ver documento → 2. Plan de implantación.md  
 
 ---
 
@@ -51,8 +49,6 @@ Se describe el proceso de instalación en servidores, equipos cliente y entorno 
 - 3.2 Instalación mediante imágenes  
 - 3.3 Instalación mediante virtualización (Proxmox)  
 - 3.4 Conclusión  
-
-📄 Ver documento → 3 Instalación del Sistema Operativo.md  
 
 ---
 
@@ -65,7 +61,6 @@ Se detallan las configuraciones básicas necesarias para dejar los sistemas oper
 - 4.4 Configuración del servidor LAB  
 - 4.5 Conclusión  
 
-📄 Ver documento → 4 Configuración del sistema.md  
 
 ---
 
@@ -77,7 +72,6 @@ Se implementa una estructura de usuarios y grupos, junto con políticas de permi
 - 5.3 Equipos Windows 11  
 - 5.4 Permisos en Proxmox  
 
-📄 Ver documento → 5 Usuarios y permisos.md  
 
 ---
 
@@ -89,6 +83,5 @@ Se configuran los servicios esenciales que permiten la comunicación, administra
 - 6.3 Servicios básicos de red  
 - 6.4 Conclusión  
 
-📄 Ver documento → 6 Servicios básicos del sistema.md  
 
 ---
