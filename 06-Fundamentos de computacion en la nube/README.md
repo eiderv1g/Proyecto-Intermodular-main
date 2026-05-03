@@ -14,9 +14,9 @@ El objetivo principal de la sección de Fundamentos de computación en la nube e
 
 # Índice del Proyecto
 
-1. Introducción
-2. Elección proveedor
-3. Arquitectura Cloud
-4. Servicios CLoud
-5. Estimación Costes
-- Intermodular_MPO.pdf
+- 1. Introducción
+- 2. Elección proveedor
+- 3. Arquitectura Cloud
+- 4. Servicios CLoud
+- 5. Estimación Costes
+- 6. Intermodular_MPO.pdf
