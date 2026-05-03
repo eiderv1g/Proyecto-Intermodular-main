@@ -114,7 +114,11 @@ El conjunto XML/DTD/XSLT actúa como **capa de exportación y reporte** de Cyber
 
 ---
 
-## 6. Estructura de ficheros
+## 6. Portal web adicional
+
+De forma adicional y complementaria a los requerimientos del proyecto, y como forma de ampliar nuestra práctica y la simulación de CyberForge, se añade un directorio /web_extra/ que contiene un .html y un .css con una posible web para la empresa.
+
+## 7. Estructura de ficheros
 
 ```
 /xml/
@@ -132,5 +136,9 @@ El conjunto XML/DTD/XSLT actúa como **capa de exportación y reporte** de Cyber
 /docs/
   dtd_valid_and_dtd_error.png
   xsl_transform.png
-  Informe.md         
+  Informe.md
+
+/web_extra/
+  index.html
+  style.css        
 ```
