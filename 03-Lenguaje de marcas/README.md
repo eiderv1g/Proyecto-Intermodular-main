@@ -1,4 +1,4 @@
-# Informe del Proyecto: Lenguajes de Marcas
+# Proyecto Intermodular: Lenguajes de Marcas
 
 **Proyecto:** CyberForge — Centro de formación en ciberseguridad  
 
