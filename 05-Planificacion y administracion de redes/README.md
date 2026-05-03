@@ -32,7 +32,8 @@ Guía de direcciones IP de los dispositivos con direccionamiento estático.
 Capturas de pantalla de las configuraciones ACL principales.
 
 **7. Configuraciones y pruebas de funcionamiento**
- Capturas de pantalla de las pruebas de funcionamiento de las ACLs y la conectividad general.
+Capturas de pantalla de las pruebas de funcionamiento de las ACLs y la conectividad general.
+ 
 ------------------------------------------------------------------------
 
 
