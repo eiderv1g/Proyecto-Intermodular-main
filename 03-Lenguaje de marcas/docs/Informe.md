@@ -10,7 +10,7 @@
 
 ---
 
-En este apartado del proyecto simularemos el tratamiento de un archivo XML, que puede actuar como un volcado o un backup de la Base de Datos de CyberForge (la misma que se encuentra en el apartado de la asignatura Gestión de Bases de Datos). Dicho XML se valida con un DTD -y se demuestra la fiabilidad del DTD con un datos_error.xml que no pasa la validación-. También se transforma en un .html mediante un .xsl, más adelante en este informe se incluyen los comandos necesarios para la transformación. 
+En este apartado del Proyecto Intermodular simularemos el tratamiento de un archivo XML, que puede actuar como un volcado o un backup de la Base de Datos de CyberForge (la misma que se encuentra en el apartado de la asignatura Gestión de Bases de Datos). Dicho XML se valida con un DTD -y se demuestra la fiabilidad del DTD con un datos_error.xml que no pasa la validación-. También se transforma en un .html mediante un .xsl, más adelante en este informe se incluyen los comandos necesarios para la transformación. 
 
 Hemos añadido el reporte.html de manera adicional al proyecto, y el .css que mejora la estética al desplegarlo en navegador, ya sea del XML o del HTML. También se incluye un .json con los mismos datos y estructura del XML, y por tanto, de la base de datos. Para finalizar, añadimos una web extra como material de práctica y apoyo para CyberForge.
 
