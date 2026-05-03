@@ -7,7 +7,7 @@
 
 ## PRESENTACIÓN
 
-Para este proyecto hemos decidido simular el funcionamiento de un centro presencial de formación y coworking para estudiantes de ciberseguridad. Dicha especialización requiere un tratamiento especialmente cuidadoso de la planificación de redes, ya que los servidores van a albergar, entre otras cosas, máquinas virtuales vulnerables que deben estar bien aisladas.
+Para este proyecto hemos decidido simular el funcionamiento de un centro presencial de formación y coworking para estudiantes de ciberseguridad, llamado CyberForge. Dicha especialización requiere un tratamiento especialmente cuidadoso de la planificación de redes, ya que los servidores van a albergar, entre otras cosas, máquinas virtuales vulnerables que deben estar bien aisladas.
 
 El resto de la planificación se ha hecho conforme a las directrices generales del proyecto, con oficinas en la planta baja dedicadas a administración, dirección y una sala de servidores que alojará dos VLANs: la 60 para servidores generales y la 61 (LAB) para el server que contiene las VMs vulnerables, además de una recepción que funciona con el wifi de empleados (VLAN 70), y hace las veces de espacio de coworking, con otro wifi de invitados (VLAN 80) para los clientes y alumnos.
 
