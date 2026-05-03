@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../transform.xsl"?>
+<!DOCTYPE cyberforge SYSTEM "modelo.dtd">
+
+<cyberforge>
+
+    <alumnos>
+        <alumno id="a1" telefono="600123123">
+            <nombre>Antonio Rossi</nombre>
+            <email>antonio@email.com</email>
+        </alumno>
+        <alumno id="a2" telefono="611111111">
+            <nombre>Laura Pérez</nombre>
+            <email>laura@email.com</email>
+        </alumno>
+        <alumno id="a3" telefono="600111111">
+            <nombre>Carlos Ficticius</nombre>
+            <email>carlos@email.com</email>
+        </alumno>
+        <alumno id="a4" telefono="600222222">
+            <nombre>María José Niño</nombre>
+            <email>mariajo@email.com</email>
+        </alumno>
+        <alumno id="a5" telefono="600333333">
+            <nombre>José María Palomares</nombre>
+            <email>josema@email.com</email>
+        </alumno>
+        <alumno id="a6" telefono="600444444">
+            <nombre>Adolfo Pinceles</nombre>
+            <email>adolfo@email.com</email>
+        </alumno>
+        <alumno id="a7" telefono="600555555">
+            <nombre>Ernesto Calpiano</nombre>
+            <email>ernesto@email.com</email>
+        </alumno>
+        <alumno id="a8" telefono="600666666">
+            <nombre>Lucía Romero</nombre>
+            <email>lucia@email.com</email>
+        </alumno>
+        <alumno id="a9" telefono="600777777">
+            <nombre>David Torres</nombre>
+            <email>david@email.com</email>
+        </alumno>
+    </alumnos>
+
+    <departamentos>
+        <departamento id="d1" equipoHW="Servidores">
+            <nombre>IT</nombre>
+        </departamento>
+        <departamento id="d2" equipoHW="PCs">
+            <nombre>Soporte PCs</nombre>
+        </departamento>
+        <departamento id="d3" equipoHW="PCs">
+            <nombre>Formación</nombre>
+        </departamento>
+        <departamento id="d4" equipoHW="Servidores">
+            <nombre>Soporte Servidores</nombre>
+        </departamento>
+    </departamentos>
+
+    <empleados>
+        <empleado id="e1" rol="instructor" salario="2000" fecha_contratacion="2024-01-01" departamento="d1">
+            <nombre>Carlos Ruiz</nombre>
+            <email>carlos@empresa.com</email>
+        </empleado>
+        <empleado id="e2" rol="soporte" salario="1800" fecha_contratacion="2024-03-01" departamento="d2">
+            <nombre>Ana López</nombre>
+            <email>ana@empresa.com</email>
+        </empleado>
+        <empleado id="e3" rol="instructor" salario="2000" fecha_contratacion="2024-01-01" departamento="d1">
+            <nombre>Sergio Gallardo</nombre>
+            <email>sergio@email.com</email>
+        </empleado>
+        <empleado id="e4" rol="instructor" salario="2000" fecha_contratacion="2024-01-01" departamento="d1">
+            <nombre>Miriam Ocaña</nombre>
+            <email>miriam@email.com</email>
+        </empleado>
+        <empleado id="e5" rol="instructor" salario="2200" fecha_contratacion="2024-01-01" departamento="d1">
+            <nombre>Antonio J. Rossi</nombre>
+            <email>antoniorossi@email.com</email>
+        </empleado>
+        <empleado id="e6" rol="admin" salario="2500" fecha_contratacion="2024-01-01" departamento="d2">
+            <nombre>Lucía Fernández</nombre>
+            <email>lucifer@email.com</email>
+        </empleado>
+    </empleados>
+
+    <laboratorios>
+        <laboratorio id="lab1" sistema="Linux" dificultad="easy" instructor="e1">
+            <nombre>Linux Básico</nombre>
+            <descripcion>Intro a Linux</descripcion>
+        </laboratorio>
+        <laboratorio id="lab2" sistema="Linux" dificultad="easy" instructor="e1">
+            <nombre>Cyber Básico</nombre>
+            <descripcion>Fundamentos de ciberseguridad</descripcion>
+        </laboratorio>
+        <laboratorio id="lab3" sistema="Linux" dificultad="medium" instructor="e2">
+            <nombre>Reconocimiento</nombre>
+            <descripcion>OSINT y escaneo</descripcion>
+        </laboratorio>
+        <laboratorio id="lab4" sistema="Linux" dificultad="hard" instructor="e3">
+            <nombre>PrivEsc</nombre>
+            <descripcion>Escalada de privilegios</descripcion>
+        </laboratorio>
+    </laboratorios>
+
+    <desafios>
+        <desafio id="ch1" tipo="privilege_escalation" dificultad="medium" laboratorio="lab1">
+            <titulo>Escalada de privilegios</titulo>
+            <descripcion>Subir permisos</descripcion>
+        </desafio>
+        <desafio id="ch2" tipo="practica" dificultad="easy" laboratorio="lab1">
+            <titulo>Intro Linux</titulo>
+            <descripcion>Comandos básicos</descripcion>
+        </desafio>
+        <desafio id="ch3" tipo="practica" dificultad="medium" laboratorio="lab2">
+            <titulo>Escaneo red</titulo>
+            <descripcion>Nmap</descripcion>
+        </desafio>
+        <desafio id="ch4" tipo="practica" dificultad="hard" laboratorio="lab3">
+            <titulo>Root exploit</titulo>
+            <descripcion>Escalada</descripcion>
+        </desafio>
+    </desafios>
+
+    <eventos>
+        <evento id="ev1" fecha_inicio="2026-03-01" fecha_fin="2026-03-03">
+            <nombre>CTF Marzo</nombre>
+            <descripcion>Evento mensual</descripcion>
+        </evento>
+        <evento id="ev2" fecha_inicio="2026-05-08" fecha_fin="2026-05-10">
+            <nombre>CTF Mayo</nombre>
+            <descripcion>Evento de hacking</descripcion>
+        </evento>
+        <evento id="ev3" fecha_inicio="2026-06-01" fecha_fin="2026-06-03">
+            <nombre>CTF Junio</nombre>
+            <descripcion>Evento avanzado</descripcion>
+        </evento>
+    </eventos>
+
+    <matriculas>
+        <matricula id="mat1" alumno="a1" estado="activa"     fecha_matricula="2026-01-10"/>
+        <matricula id="mat2" alumno="a2" estado="activa"     fecha_matricula="2026-02-01"/>
+        <matricula id="mat3" alumno="a1" estado="activa"     fecha_matricula="2026-01-01"/>
+        <matricula id="mat4" alumno="a2" estado="activa"     fecha_matricula="2026-01-02"/>
+        <matricula id="mat5" alumno="a3" estado="activa"     fecha_matricula="2026-01-03"/>
+        <matricula id="mat6" alumno="a4" estado="suspendida" fecha_matricula="2026-01-04"/>
+        <matricula id="mat7" alumno="a5" estado="activa"     fecha_matricula="2026-01-05"/>
+        <matricula id="mat8" alumno="a6" estado="finalizada" fecha_matricula="2026-01-06"/>
+        <matricula id="mat9" alumno="a7" estado="suspendida" fecha_matricula="2026-01-07"/>
+    </matriculas>
+
+    <participaciones>
+        <participacion id="par1" alumno="a1" evento="ev1"/>
+        <participacion id="par2" alumno="a2" evento="ev1"/>
+        <participacion id="par3" alumno="a3" evento="ev2"/>
+        <participacion id="par4" alumno="a4" evento="ev2"/>
+    </participaciones>
+
+    <progresos>
+        <progreso id="pr1" alumno="a1" desafio="ch1" fecha="2026-03-02" completado="si"/>
+        <progreso id="pr2" alumno="a3" desafio="ch2" fecha="2026-05-03" completado="si"/>
+        <progreso id="pr3" alumno="a4" desafio="ch3" fecha="2026-05-04" completado="no"/>
+    </progresos>
+
+    <incidencias>
+        <incidencia id="inc1" alumno="a1" empleado="e2" estado="abierta"    fecha_creacion="2026-03-05">
+            <titulo>Error login</titulo>
+            <descripcion>No puedo acceder</descripcion>
+        </incidencia>
+        <incidencia id="inc2" alumno="a1" empleado="e4" estado="abierta"    fecha_creacion="2026-05-01">
+            <titulo>Error login</titulo>
+            <descripcion>No puede acceder</descripcion>
+        </incidencia>
+        <incidencia id="inc3" alumno="a2" empleado="e4" estado="en_proceso" fecha_creacion="2026-05-02">
+            <titulo>Fallo lab</titulo>
+            <descripcion>No carga</descripcion>
+        </incidencia>
+        <incidencia id="inc4" alumno="a3" empleado="e4" estado="cerrada"    fecha_creacion="2026-05-03">
+            <titulo>Bug sistema</titulo>
+            <descripcion>Error general</descripcion>
+        </incidencia>
+        <incidencia id="inc5" alumno="a4" empleado="e4" estado="abierta"    fecha_creacion="2026-05-04">
+            <titulo>Problema red</titulo>
+            <descripcion>Lentitud</descripcion>
+        </incidencia>
+        <incidencia id="inc6" alumno="a5" empleado="e4" estado="cerrada"    fecha_creacion="2026-05-05">
+            <titulo>Cuenta bloqueada</titulo>
+            <descripcion>Error acceso</descripcion>
+        </incidencia>
+    </incidencias>
+
+</cyberforge>

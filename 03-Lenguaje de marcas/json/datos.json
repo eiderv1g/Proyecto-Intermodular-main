@@ -1,0 +1,76 @@
+{
+  "cyberforge": {
+    "alumnos": [
+      { "id": "a1", "nombre": "Antonio Rossi",       "email": "antonio@email.com", "telefono": "600123123" },
+      { "id": "a2", "nombre": "Laura Pérez",          "email": "laura@email.com",   "telefono": "611111111" },
+      { "id": "a3", "nombre": "Carlos Ficticius",     "email": "carlos@email.com",  "telefono": "600111111" },
+      { "id": "a4", "nombre": "María José Niño",      "email": "mariajo@email.com", "telefono": "600222222" },
+      { "id": "a5", "nombre": "José María Palomares", "email": "josema@email.com",  "telefono": "600333333" },
+      { "id": "a6", "nombre": "Adolfo Pinceles",      "email": "adolfo@email.com",  "telefono": "600444444" },
+      { "id": "a7", "nombre": "Ernesto Calpiano",     "email": "ernesto@email.com", "telefono": "600555555" },
+      { "id": "a8", "nombre": "Lucía Romero",         "email": "lucia@email.com",   "telefono": "600666666" },
+      { "id": "a9", "nombre": "David Torres",         "email": "david@email.com",   "telefono": "600777777" }
+    ],
+    "departamentos": [
+      { "id": "d1", "nombre": "IT",        "equipoHW": "Servidores" },
+      { "id": "d2", "nombre": "Soporte PCs",   "equipoHW": "PCs"        },
+      { "id": "d3", "nombre": "Formación", "equipoHW": "PCs"        },
+      { "id": "d4", "nombre": "Soporte Servidores",   "equipoHW": "Servidores" }
+    ],
+    "empleados": [
+      { "id": "e1", "nombre": "Carlos Ruiz",      "email": "carlos@empresa.com",    "rol": "instructor", "salario": 2000, "fecha_contratacion": "2024-01-01", "departamento": "d1" },
+      { "id": "e2", "nombre": "Ana López",         "email": "ana@empresa.com",       "rol": "soporte",    "salario": 1800, "fecha_contratacion": "2024-03-01", "departamento": "d2" },
+      { "id": "e3", "nombre": "Sergio Gallardo",   "email": "sergio@email.com",      "rol": "instructor", "salario": 2000, "fecha_contratacion": "2024-01-01", "departamento": "d1" },
+      { "id": "e4", "nombre": "Miriam Ocaña",      "email": "miriam@email.com",      "rol": "instructor", "salario": 2000, "fecha_contratacion": "2024-01-01", "departamento": "d1" },
+      { "id": "e5", "nombre": "Antonio J. Rossi",  "email": "antoniorossi@email.com","rol": "instructor", "salario": 2200, "fecha_contratacion": "2024-01-01", "departamento": "d1" },
+      { "id": "e6", "nombre": "Lucía Fernández",   "email": "lucifer@email.com",     "rol": "admin",      "salario": 2500, "fecha_contratacion": "2024-01-01", "departamento": "d2" }
+    ],
+    "laboratorios": [
+      { "id": "lab1", "nombre": "Linux Básico",    "descripcion": "Intro a Linux",                    "sistema": "Linux", "dificultad": "easy",   "instructor": "e1" },
+      { "id": "lab2", "nombre": "Cyber Básico",    "descripcion": "Fundamentos de ciberseguridad",    "sistema": "Linux", "dificultad": "easy",   "instructor": "e1" },
+      { "id": "lab3", "nombre": "Reconocimiento",  "descripcion": "OSINT y escaneo",                  "sistema": "Linux", "dificultad": "medium", "instructor": "e2" },
+      { "id": "lab4", "nombre": "PrivEsc",         "descripcion": "Escalada de privilegios",          "sistema": "Linux", "dificultad": "hard",   "instructor": "e3" }
+    ],
+    "desafios": [
+      { "id": "ch1", "titulo": "Escalada de privilegios", "descripcion": "Subir permisos",    "tipo": "privilege_escalation", "dificultad": "medium", "laboratorio": "lab1" },
+      { "id": "ch2", "titulo": "Intro Linux",             "descripcion": "Comandos básicos",  "tipo": "practica",             "dificultad": "easy",   "laboratorio": "lab1" },
+      { "id": "ch3", "titulo": "Escaneo red",             "descripcion": "Nmap",              "tipo": "practica",             "dificultad": "medium", "laboratorio": "lab2" },
+      { "id": "ch4", "titulo": "Root exploit",            "descripcion": "Escalada",          "tipo": "practica",             "dificultad": "hard",   "laboratorio": "lab3" }
+    ],
+    "eventos": [
+      { "id": "ev1", "nombre": "CTF Marzo", "descripcion": "Evento mensual",      "fecha_inicio": "2026-03-01", "fecha_fin": "2026-03-03" },
+      { "id": "ev2", "nombre": "CTF Mayo",  "descripcion": "Evento de hacking",   "fecha_inicio": "2026-05-08", "fecha_fin": "2026-05-10" },
+      { "id": "ev3", "nombre": "CTF Junio", "descripcion": "Evento avanzado",     "fecha_inicio": "2026-06-01", "fecha_fin": "2026-06-03" }
+    ],
+    "matriculas": [
+      { "id": "mat1", "alumno": "a1", "estado": "activa",     "fecha_matricula": "2026-01-10" },
+      { "id": "mat2", "alumno": "a2", "estado": "activa",     "fecha_matricula": "2026-02-01" },
+      { "id": "mat3", "alumno": "a1", "estado": "activa",     "fecha_matricula": "2026-01-01" },
+      { "id": "mat4", "alumno": "a2", "estado": "activa",     "fecha_matricula": "2026-01-02" },
+      { "id": "mat5", "alumno": "a3", "estado": "activa",     "fecha_matricula": "2026-01-03" },
+      { "id": "mat6", "alumno": "a4", "estado": "suspendida", "fecha_matricula": "2026-01-04" },
+      { "id": "mat7", "alumno": "a5", "estado": "activa",     "fecha_matricula": "2026-01-05" },
+      { "id": "mat8", "alumno": "a6", "estado": "finalizada", "fecha_matricula": "2026-01-06" },
+      { "id": "mat9", "alumno": "a7", "estado": "suspendida", "fecha_matricula": "2026-01-07" }
+    ],
+    "participaciones": [
+      { "id": "par1", "alumno": "a1", "evento": "ev1" },
+      { "id": "par2", "alumno": "a2", "evento": "ev1" },
+      { "id": "par3", "alumno": "a3", "evento": "ev2" },
+      { "id": "par4", "alumno": "a4", "evento": "ev2" }
+    ],
+    "progresos": [
+      { "id": "pr1", "alumno": "a1", "desafio": "ch1", "fecha": "2026-03-02", "completado": true  },
+      { "id": "pr2", "alumno": "a3", "desafio": "ch2", "fecha": "2026-05-03", "completado": true  },
+      { "id": "pr3", "alumno": "a4", "desafio": "ch3", "fecha": "2026-05-04", "completado": false }
+    ],
+    "incidencias": [
+      { "id": "inc1", "titulo": "Error login",      "descripcion": "No puedo acceder", "estado": "abierta",    "fecha_creacion": "2026-03-05", "alumno": "a1", "empleado": "e2" },
+      { "id": "inc2", "titulo": "Error login",      "descripcion": "No puede acceder", "estado": "abierta",    "fecha_creacion": "2026-05-01", "alumno": "a1", "empleado": "e4" },
+      { "id": "inc3", "titulo": "Fallo lab",        "descripcion": "No carga",         "estado": "en_proceso", "fecha_creacion": "2026-05-02", "alumno": "a2", "empleado": "e4" },
+      { "id": "inc4", "titulo": "Bug sistema",      "descripcion": "Error general",    "estado": "cerrada",    "fecha_creacion": "2026-05-03", "alumno": "a3", "empleado": "e4" },
+      { "id": "inc5", "titulo": "Problema red",     "descripcion": "Lentitud",         "estado": "abierta",    "fecha_creacion": "2026-05-04", "alumno": "a4", "empleado": "e4" },
+      { "id": "inc6", "titulo": "Cuenta bloqueada", "descripcion": "Error acceso",     "estado": "cerrada",    "fecha_creacion": "2026-05-05", "alumno": "a5", "empleado": "e4" }
+    ]
+  }
+}
