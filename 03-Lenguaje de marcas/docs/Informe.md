@@ -71,7 +71,7 @@ Abrir `xml/datos.xml` directamente en **Firefox**. El navegador aplica `transfor
 <?xml-stylesheet type="text/xsl" href="../transform.xsl"?>
 ```
 
-> ⚠️ Chrome bloquea XSLT local por seguridad. Usar Firefox o la opción B.
+>  Chrome bloquea XSLT local por seguridad. Usar Firefox o la opción B.
 
 ### Opción B — Terminal con xsltproc
 
