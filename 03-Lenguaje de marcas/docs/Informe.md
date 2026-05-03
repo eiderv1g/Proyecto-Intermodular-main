@@ -1,12 +1,46 @@
 # Informe del Proyecto: Lenguajes de Marcas
 
 **Proyecto:** CyberForge — Centro de formación en ciberseguridad  
+
 **Módulo:** Lenguajes de Marcas y Sistemas de Gestión de Información 
+
 **Curso:** 25-26 | 1º ASIR
+
 **Equipo**: Sergio Gallardo Marchal, Miriam Ocaña Pérez-Cerdá, Antonio Rossi Besabé
+
 ---
 
-## 1. Qué datos representa el XML
+En este apartado del Proyecto Intermodular simularemos el tratamiento de un archivo XML, que puede actuar como un volcado o un backup de la Base de Datos de CyberForge (la misma que se encuentra en el apartado de la asignatura Gestión de Bases de Datos). Dicho XML se valida con un DTD -y se demuestra la fiabilidad del DTD con un datos_error.xml que no pasa la validación-. También se transforma en un .html mediante un .xsl, más adelante en este informe se incluyen los comandos necesarios para la transformación. 
+
+Hemos añadido el reporte.html de manera adicional al proyecto, y el .css que mejora la estética al desplegarlo en navegador, ya sea del XML o del HTML. También se incluye un .json con los mismos datos y estructura del XML, y por tanto, de la base de datos. Para finalizar, añadimos una web extra como material de práctica y apoyo para CyberForge.
+
+## 1. Estructura de ficheros
+
+```
+/xml/
+  datos.xml         
+  datos_error.xml    
+  modelo.dtd         
+  transform.xsl     
+
+/css/
+  styles.css          
+
+/json/
+  datos.json          
+
+/docs/
+  dtd_valid_and_dtd_error.png
+  xsl_transform.png
+  Informe.md
+
+/web_extra/
+  index.html
+  style.css
+
+```
+
+## 2. Qué datos representa el XML
 
 El archivo `datos.xml` es una exportación estructurada de la base de datos de **CyberForge**. Contiene exactamente las mismas entidades del modelo relacional SQL correspondiente al proyecto de la asignatura Gestión de Bases de Datos (también en este repositorio), organizadas en jerarquía XML:
 
@@ -27,7 +61,7 @@ Las claves primarias numéricas de SQL se han convertido a IDs con prefijo semá
 
 ---
 
-## 2. Cómo se valida con el DTD
+## 3. Cómo se valida con el DTD
 
 ### Validación correcta
 
@@ -61,7 +95,7 @@ Document does not validate
 
 ---
 
-## 3. Cómo ejecutar la transformación XSLT
+## 4. Cómo ejecutar la transformación XSLT
 
 ### Opción A — Firefox (local)
 
@@ -95,7 +129,7 @@ Abrir `docs/reporte.html` en cualquier navegador. Incluimos una copia del report
 
 ---
 
-## 4. Dónde ver la evidencia
+## 5. Dónde ver la evidencia
 
 En esta carpeta **/docs** se incluyen dos **capturas de pantalla**:
 
@@ -103,7 +137,7 @@ En esta carpeta **/docs** se incluyen dos **capturas de pantalla**:
 
 **dtd_valid_and_dtd_error.png** demuestra la validación DTD del datos.xml, y la no-validación de datos_error.xml .
 
-## 5. Cómo encaja en el proyecto
+## 6. Cómo encaja en el proyecto
 
 El conjunto XML/DTD/XSLT actúa como **capa de exportación y reporte** de CyberForge:
 
@@ -114,23 +148,9 @@ El conjunto XML/DTD/XSLT actúa como **capa de exportación y reporte** de Cyber
 
 ---
 
-## 6. Estructura de ficheros
+## 7. Portal web adicional
 
-```
-/xml/
-  datos.xml         
-  datos_error.xml    
-  modelo.dtd         
-  transform.xsl     
+De forma adicional y complementaria a los requerimientos del proyecto, y como forma de ampliar nuestra práctica y la simulación de CyberForge, se añade un directorio /web_extra/ que contiene un .html y un .css con una posible web para la empresa.
 
-/css/
-  styles.css          
-
-/json/
-  datos.json          
-
-/docs/
-  dtd_valid_and_dtd_error.png
-  xsl_transform.png
-  Informe.md         
+     
 ```
