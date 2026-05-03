@@ -7,6 +7,7 @@
 **Curso:** 25-26 | 1º ASIR
 
 **Equipo**: Sergio Gallardo Marchal, Miriam Ocaña Pérez-Cerdá, Antonio Rossi Besabé
+
 ---
 
 En este apartado del proyecto simularemos el tratamiento de un archivo XML, que puede actuar como un volcado o un backup de la Base de Datos de CyberForge (la misma que se encuentra en el apartado de la asignatura Gestión de Bases de Datos). Dicho XML se valida con un DTD -y se demuestra la fiabilidad del DTD con un datos_error.xml que no pasa la validación-. También se transforma en un .html mediante un .xsl, más adelante en este informe se incluyen los comandos necesarios para la transformación. 
