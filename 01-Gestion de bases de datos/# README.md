@@ -1,4 +1,4 @@
-# README
+README
 
 # CYBERFORGE - Gestión de Base de Datos
 
