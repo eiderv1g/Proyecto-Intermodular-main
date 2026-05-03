@@ -1,5 +1,3 @@
-# README  GENERAL
-
 # CYBERFORGE - PROYECTO INTERMODULAR
 
 **Equipo**: Sergio Gallardo Marchal, Miriam Ocaña Pérez-Cerdá, Antonio José Rossi Bersabé.
