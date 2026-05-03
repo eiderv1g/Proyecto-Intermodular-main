@@ -8,14 +8,14 @@
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>CyberForge - Reporte</title>
-    <link rel="stylesheet" href="../styles.css"/>
+    <link rel="stylesheet" href="../css/styles.css"/>
 </head>
 <body>
 
 
 <div class="portada">
-    <h1>&#x1F6E1; CyberForge</h1>
-    <p class="subtitulo">Reporte de gestión de plataforma</p>
+    <h1>CyberForge</h1>
+    <p class="subtitulo">Reporte de gestion de plataforma</p>
     <p class="fecha">Generado: <xsl:value-of select="cyberforge/incidencias/incidencia[1]/@fecha_creacion"/></p>
 </div>
 
@@ -24,16 +24,16 @@
     <a href="#alumnos">Alumnos</a> |
     <a href="#empleados">Empleados</a> |
     <a href="#laboratorios">Laboratorios</a> |
-    <a href="#desafios">Desafíos</a> |
+    <a href="#desafios">Desafios</a> |
     <a href="#eventos">Eventos CTF</a> |
-    <a href="#matriculas">Matrículas</a> |
+    <a href="#matriculas">Matriculas</a> |
     <a href="#incidencias">Incidencias</a>
 </nav>
 
 
 <h2 id="alumnos">Alumnos</h2>
 <table>
-    <tr><th>ID</th><th>Nombre</th><th>Email</th><th>Teléfono</th></tr>
+    <tr><th>ID</th><th>Nombre</th><th>Email</th><th>Telefono</th></tr>
     <xsl:for-each select="cyberforge/alumnos/alumno">
         <xsl:sort select="nombre"/>
         <tr>
@@ -80,9 +80,9 @@
 </table>
 
 
-<h2 id="desafios">Desafíos</h2>
+<h2 id="desafios">Desafios</h2>
 <table>
-    <tr><th>ID</th><th>Título</th><th>Tipo</th><th>Dificultad</th><th>Laboratorio</th></tr>
+    <tr><th>ID</th><th>Titulo</th><th>Tipo</th><th>Dificultad</th><th>Laboratorio</th></tr>
     <xsl:for-each select="cyberforge/desafios/desafio">
         <xsl:sort select="@dificultad"/>
         <xsl:variable name="refLab" select="@laboratorio"/>
@@ -99,7 +99,7 @@
 
 <h2 id="eventos">Eventos CTF</h2>
 <table>
-    <tr><th>ID</th><th>Nombre</th><th>Descripción</th><th>Inicio</th><th>Fin</th><th>Participantes</th></tr>
+    <tr><th>ID</th><th>Nombre</th><th>Descripcion</th><th>Inicio</th><th>Fin</th><th>Participantes</th></tr>
     <xsl:for-each select="cyberforge/eventos/evento">
         <xsl:sort select="@fecha_inicio"/>
         <xsl:variable name="refEv" select="@id"/>
@@ -115,7 +115,7 @@
 </table>
 
 
-<h2 id="matriculas">Matrículas</h2>
+<h2 id="matriculas">Matriculas</h2>
 
 <h3>Activas</h3>
 <table>
