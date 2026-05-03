@@ -10,7 +10,7 @@
             <email>antonio@email.com</email>
         </alumno>
         <alumno id="a2" telefono="611111111">
-            <nombre>Laura Pérez</nombre>
+            <nombre>Laura Perez</nombre>
             <email>laura@email.com</email>
         </alumno>
         <alumno id="a3" telefono="600111111">
@@ -18,11 +18,11 @@
             <email>carlos@email.com</email>
         </alumno>
         <alumno id="a4" telefono="600222222">
-            <nombre>María José Niño</nombre>
+            <nombre>Maria Jose Niño</nombre>
             <email>mariajo@email.com</email>
         </alumno>
         <alumno id="a5" telefono="600333333">
-            <nombre>José María Palomares</nombre>
+            <nombre>Jose Maria Palomares</nombre>
             <email>josema@email.com</email>
         </alumno>
         <alumno id="a6" telefono="600444444">
@@ -34,7 +34,7 @@
             <email>ernesto@email.com</email>
         </alumno>
         <alumno id="a8" telefono="600666666">
-            <nombre>Lucía Romero</nombre>
+            <nombre>Lucia Romero</nombre>
             <email>lucia@email.com</email>
         </alumno>
         <alumno id="a9" telefono="600777777">
@@ -51,7 +51,7 @@
             <nombre>Soporte PCs</nombre>
         </departamento>
         <departamento id="d3" equipoHW="PCs">
-            <nombre>Formación</nombre>
+            <nombre>Formacion</nombre>
         </departamento>
         <departamento id="d4" equipoHW="Servidores">
             <nombre>Soporte Servidores</nombre>
@@ -64,7 +64,7 @@
             <email>carlos@empresa.com</email>
         </empleado>
         <empleado id="e2" rol="soporte" salario="1800" fecha_contratacion="2024-03-01" departamento="d2">
-            <nombre>Ana López</nombre>
+            <nombre>Ana Lopez</nombre>
             <email>ana@empresa.com</email>
         </empleado>
         <empleado id="e3" rol="instructor" salario="2000" fecha_contratacion="2024-01-01" departamento="d1">
@@ -80,18 +80,18 @@
             <email>antoniorossi@email.com</email>
         </empleado>
         <empleado id="e6" rol="admin" salario="2500" fecha_contratacion="2024-01-01" departamento="d2">
-            <nombre>Lucía Fernández</nombre>
+            <nombre>Lucia Fernandez</nombre>
             <email>lucifer@email.com</email>
         </empleado>
     </empleados>
 
     <laboratorios>
         <laboratorio id="lab1" sistema="Linux" dificultad="easy" instructor="e1">
-            <nombre>Linux Básico</nombre>
+            <nombre>Linux Basico</nombre>
             <descripcion>Intro a Linux</descripcion>
         </laboratorio>
         <laboratorio id="lab2" sistema="Linux" dificultad="easy" instructor="e1">
-            <nombre>Cyber Básico</nombre>
+            <nombre>Cyber Basico</nombre>
             <descripcion>Fundamentos de ciberseguridad</descripcion>
         </laboratorio>
         <laboratorio id="lab3" sistema="Linux" dificultad="medium" instructor="e2">
@@ -111,7 +111,7 @@
         </desafio>
         <desafio id="ch2" tipo="practica" dificultad="easy" laboratorio="lab1">
             <titulo>Intro Linux</titulo>
-            <descripcion>Comandos básicos</descripcion>
+            <descripcion>Comandos basicos</descripcion>
         </desafio>
         <desafio id="ch3" tipo="practica" dificultad="medium" laboratorio="lab2">
             <titulo>Escaneo red</titulo>
